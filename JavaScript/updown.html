@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>updown</title>
+  <script>
+//범위설정
+var numberScope = 100;
+
+//0~100 중 난수 만들기
+var randomNum = Math.random() * numberScope;
+console.log(randomNum);
+
+//생성한 난수 절삭해주기
+var ranNum = Math.floor(randomNum);
+console.log(ranNum);
+
+//반복할 횟수 설정하기.
+//var count prompt("count")로 하면 사용자가 count횟수 설정 할 수 있음
+var count = prompt("count");
+console.log(count);
+
+//반복할 횟수 설정한 값 넣어주기.
+for(i=0; i < count; i++){
+
+  var entry = prompt("숫자를 입력하세요");
+  console.log(entry);
+
+    if(ranNum > entry){
+      alert("UP");
+
+    }else if(ranNum < entry){
+      alert("DOWN");
+
+    }else if(ranNum == entry){
+      alert("CORRECT");
+
+      //정답 맞추면 count횟수가 끝나지 않아도 더 반복하지 않고 끝내기
+      break;
+    }
+}
+
+
+
+
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

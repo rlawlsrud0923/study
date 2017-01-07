@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slide2_1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style type="text/css">
+
+        *{margin:0; padding:0;}
+        ul{list-style:none;}
+
+        .slide{border:1px #F00 solid; width:600px; height:300px; margin:0 auto; position:relative;}
+        .slide button{position:absolute; top:50%;width:30px; height:40px;}
+        .slide button.next{left:-50px;}
+        .slide button.prev{right:-50px;}
+        .slide .view{text-align:center; position:relative;  height:300px; overflow:hidden;}
+        .slide li {display:inline-block;}
+        .slide li.on a{background-color: #F00;}
+        .slide li a{position:relative; top:250px; z-index:1; display:block; width:20px; height:20px; line-height:20px; border:1px #FFF solid; color:#FFF; text-decoration:none;}
+        .slide li:first-child div{display:block; }
+        .slide li div{position:absolute; width:100%;left:0; top:0; display:none;}
+        .slide li div img{width:100%;}
+     </style>
+
+     <script>
+
+         $(function(){
+
+             var idx = 0; //초기값
+
+             var inters = setInterval(function(){
+                 $('.next').trigger('click')
+             },3000);
+
+
+            //이미지에 마우스대면 슬라이드 재생/멈춤
+             $('.view').mouseenter(function(){  //.view(=이미지)에 마우스 올리면 작동해
+
+                 clearInterval(inters)  //슬라이드 자동으로 넘어가는 것 멈춰
+
+             }).mouseleave(function(){  //마우스를 떼면 작동해
+
+                inters = setInterval(function(){    //반복재생해라.
+                 $('.next').click();    // next를 click하면 
+                 },3000);   //3초동안
+             })
+             
+
+             function movement(start,end,i){
+                $('.view li').eq(i).addClass('on').find('div').css({
+                    left:start,
+                    'display':'block'
+                }).stop().animate({
+                    left:end
+                }).parent().siblings().removeClass();   // 선택된 요소(부모,형제요소)의 클래스 이름을 제거해.
+
+
+                if(idx == $('.view li').length){
+                    idx = 0
+                    movement('100%',0,idx)
+                }else if(idx < 0){
+                    idx = $('.view li').length -1;
+                    movement('-100%',0,idx)
+                }
+             }
+
+
+             $('.next').click(function(){
+                  console.log(idx)
+                movement(0,'-100%',idx);
+                idx++
+                movement('100%',0,idx);
+
+             })
+
+             $('.prev').click(function(){
+                movement(0,'100%',idx);
+                idx--
+                movement('-100%',0,idx);
+             })
+
+            $('.view li a').click(function(){
+                var hinum = $('.view li.on').index();
+                idx = $(this).parent().index()
+
+                if(hinum < idx){
+                    movement(0,'-100%',hinum);
+                    movement('100%',0,idx);
+                }else if(hinum > idx){
+                    movement(0,'100%',hinum);
+                    movement('-100%',0,idx);
+                }
+
+                return false;
+            })
+
+         })
+
+
+     </script>
+
+
+
+
+
+
+</head>
+<body>
+
+    <div class="slide">
+        <div class="btngroup">
+                <button class="next">다음</button>
+                <button class="prev">이전</button>
+        </div>
+
+        <div class="view">
+            <ul>
+                <li class="on">
+                    <a href="">1</a>
+                    <div><img src="../img/a.jpg"></div>
+                </li>
+                <li>
+                    <a href="">2</a>
+                    <div><img src="../img/b.jpg"></div>
+                </li>
+                <li>
+                    <a href="">3</a>
+                    <div><img src="../img/c.jpg"></div>
+                </li>
+                <li>
+                    <a href="">4</a>
+                    <div><img src="../img/d.jpg"></div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

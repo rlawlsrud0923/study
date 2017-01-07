@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>입력폼 input</title>
+</head>
+<body>
+
+<p>
+  <!-- 한줄 입력란 -->
+  <!-- placeholder는 html5에서 나온 속성 => 익스플로어 8,7,6에서 실행 X => 8,7,6에서 호환되게 하려면 java script 사용해야 됨 -->
+  <label for="userid">아이디</label>
+  <input type="text" value="" id="userid" placeholder="아이디를 입력하세요"/>
+</p>
+
+<p>
+  <label for="userpw">비밀번호</label>
+  <input type="password" value="" id="userpw" placeholder="비밀번호를 입력하세요"/>
+</P>
+
+<p>
+  <!-- 단일선택버튼 ex)성별선택 -->
+  <!-- <p>로 묶어주고 name을 똑같이 해주면 단일 선택 가능  -->
+  <label for="man">남자</label>
+  <input type="radio" id="man" name="trans"/>
+
+  <label for="woman">여자</label>
+  <input type="radio" id="woman" name="trans"/>
+</p>
+
+<p>
+  <!-- 다중선택버튼 ex)취미체크 -->
+  <label for="sports1">농구</label>
+  <input type="checkbox" id="sports1" />
+
+  <label for="sports2">축구</label>
+  <input type="checkbox" id="sports2" />
+
+  <label for="sports3">야구</label>
+  <input type="checkbox" id="sports3" />
+</p>
+
+<p>
+  <!-- 범용버튼 : 익스플로어마다 다르게 나오기 때문에 value에 표시할 내용 입력해 줘야 됨-->
+  <label for="button"></label>
+  <input type="button" id="button" value="확인" />
+</p>
+
+  <!-- 범용버튼 : reset : 초기화/원래대로/취소 -->
+  <label for="reset"></label>
+  <input type="reset" id="reset" value="초기화" />
+
+  <!-- 범용버튼 : submit :제출/전송 -->
+  <input type="submit" value="전송"/>
+
+  <!-- 범용버튼 : file : 파일선택/찾아보기. 디자인 바꾸기 어려움 -->
+  <input type="file" />
+</p>
+
+  <!-- 사용자에게 노출할 필요 없는 데이터 지정  -->
+  <input type="hidden"
+
+<label for="mail">이메일</label>
+<select id="mail">
+  <option>gmail.com </option>
+  <option>naver.com</option>
+  <option>hanmail.net</option>
+</select>
+
+<p>
+  <!-- 속성은 순서 상관없음  -->
+<label for="text1"></label>
+<textarea rows="8" cols="40" id="text1">내용입력</textarea>
+
+<label for="text2"></label>
+<textarea rows="8" cols="40" id="text2" placeholder="내용을 입력하세요"></textarea>
+</p>
+
+</body>
+</html>

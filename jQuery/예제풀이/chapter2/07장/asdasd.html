@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>07장 예제</title>
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+
+    //var $wrap = $('.wrap');
+    var $wrap_width = $('.wrap').width();
+    var $wrap_offset = $('.wrap').offset().left;
+    var total = wrap_width + wrap_offset
+    console.log("width값: "+$wrap_width + "/ offset().left: "+$wrap_offset);
+
+
+    $(window).scroll(function(){
+      var sct = $(this).scrollTop();
+      console.log(sct); //스크롤 움직일때 값을 알아냄
+      $('fly').stop().animate({
+        top:sct
+      })
+    })
+        $(window).resize(function(){
+        rs()
+        $('.fly').css('left',total+10);
+        })
+
+      $(window).trigger('resize');
+    })
+  </script>
+
+<style media="screen">
+  .wrap{
+    width: 800px; height: 2000px;
+    border: 1px #f00 solid;
+    margin:0 auto;}
+
+  .fly{
+    width: 80px; height: 200px;
+    border: 1px #F00 solid;
+    position: absolute; left:0; top:0;
+  }
+
+</style>
+</head>
+<body>
+  <div class="wrap"></div>
+  <div class="fly"></div>
+</body>
+</html>

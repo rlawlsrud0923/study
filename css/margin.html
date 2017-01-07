@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>margin</title>
+
+  <style>
+
+      #box{
+        width: 300px;
+        height: 100px;
+
+        /* border에서 solid와 #F00은 순서 바꿔도 상관X */
+        border: 1px tomato solid;
+
+        /* margin을 0 auto 해줬을 때 가운데 맞춤 해준 것처럼 보일 수 있음 /// 실무에서 많이 사용함 */
+        margin: 0 auto;
+      }
+
+
+
+          /* 형제간의 margin겹침현상 /// margin겹침현상은 더 큰 값을 따라감  /// 상하로만 겹침현상이 일어남 */
+          /* 생활코딩 마진겹침현상     https://opentutorials.org/course/2418/13464 */
+          p{
+            border: 1px #F00 solid;
+            margin-bottom: 20px;
+          }
+
+
+            #김정일{
+            }
+            #김정은{
+              margin-top:100px;
+              border:1px #00F solid;
+            }
+
+
+
+  </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+
+        <p>hell 트럼프</p>
+        <p style="margin-top:30px">hell 김정은</p>
+
+        <!-- 자식(margin-bottom)이 부모(20px)보다 큰 300px로 설정했기 때문에 박근혜가 밀려나게 됨 -->
+        <p style="margin-bottom:300px">hell 아베</p>
+        <p>hell 박근혜</p>
+
+
+          <div id="김정일">
+            <div id="김정은">김정은</div>
+          </div>
+
+
+</body>
+</html>

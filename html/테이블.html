@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>테이블</title>
+</head>
+<body>
+  <!-- tr=table raw /// td=table data/table cell -->
+ <table border="1" width="400">
+
+  <caption>시간표</caption>
+
+   <!-- colgroup : table 각각의 넓이 설정할 수 있음 /// <col />:단일태그  -->
+  <colgroup>
+    <col width="100" />
+    <col width="150" />
+    <col width="100" />
+    <col width="50" />
+  </colgroup>
+
+   <!-- <th>제목 : 리딩기가 강세줘서 읽음-->
+   <thead>
+     <tr>
+       <th>월</th>
+       <th>화</th>
+       <th>수</th>
+       <th>목</th>
+     </tr>
+   </thead>
+
+   <!--tfoot : 합계를 보여줘야 될 때 사용 /// tfoot 위치: thead와 tbody사이 => 리딩기 떄문에 -->
+   <tfoot>
+     <tr>
+       <td></td>
+       <td></td>
+       <td>합계</td>
+       <td>100만원</td>
+     </tr>
+   </tfoot>
+
+   <!-- tbody는 필수요소 -->
+   <!-- colspan:양옆 / rowspan:위아래 합치기 -->
+   <tbody>
+     <tr>
+       <td colspan="3">사과</td>
+       <td>포도</td>
+     </tr>
+
+     <tr>
+       <td rowspan="2">사과</td>
+       <td>배</td>
+       <td>오렌지</td>
+       <td>포도</td>
+     </tr>
+
+     <tr>
+
+       <td>배</td>
+       <td>오렌지</td>
+       <td>포도</td>
+     </tr>
+   </tbody>
+
+</table>
+
+
+
+
+
+
+<!-- 세로형 테이블 -->
+ <table border="1" width="400">
+     <tbody>
+       <tr>
+         <th>과일</th>
+         <th>배</th>
+         <th>오렌지</th>
+         <th>포도</th>
+       </tr>
+
+       <tr>
+         <td>과일</td>
+         <td>배</td>
+         <td>오렌지</td>
+         <td>포도</td>
+       </tr>
+     </tbody>
+</table>
+
+
+
+
+<!-- 리딩방향 설정하기 -->
+<table border="1" width="400">
+  <thead>
+    <tr>
+      <th scope="col">title</th>
+      <th scope="col">title</th>
+      <th scope="col">title</th>
+      <th scope="col">title</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>과일</th>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>오렌지</td>
+  </tr>
+  <tr>
+    <th>과일</th>
+    <td>배</td>
+    <td>오렌지</td>
+    <td>오렌지</td>
+  </tr>
+</tbody>
+
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>원더걸스</title>
+    <link rel="stylesheet" href="css/import.css" type="text/css" />
+    <link rel="stylesheet" href="font/flaticon.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.main_menu').click(function(){
+          $(this).next('ul').slideToggle(1000);
+        })
+      })
+    </script>
+    <style type="text/css">
+        /*.flaticon-facebook-logo-button:before{font-size:100px; color:#F00;}*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">원더걸스</a></h1>
+        <nav>
+            <a href="javascript:void(0);" class="main_menu">Main Menu</a>
+            <ul>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">DISCOGRAPHY</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">NOTICE</a></li>
+                <li><a href="#">SCHEDULE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg">
+        <div class="biglogo"></div>
+    </section>
+
+<footer>
+  <div class="jyp_logo"></div>
+  <div class="sns_icon">
+    <div class="flaticon-facebook-logo-button"></div>
+    <div class="flaticon-twitter-logo-silhouette"></div>
+    <div class="flaticon-youtube-logo"></div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예제풀이_chapter2_08장</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            
+            
+            
+            //console.log($('.element').html("<div>어제와 다른 오늘을 보내겠습니다.</div>"))
+            //html은 내용을 교체하거나 수정할 수 있다.
+            
+            //console.log($('.element').text("<div>text</div>"));
+            //text가 바뀌진 않는다.
+            
+            //$('.element').apend("apen사용");
+            // 밑으로 작성됨.
+            
+            // prepend
+            // 위로 작성됨.
+            
+            // $('.element span .a').after('<span>sdfsdf1</span>')
+            // $('.element span .a').after('<span>sdfsdf2</span>')
+            // $('.element span .a').after('<span>sdfsdf3</span>')
+            // $('.element span .a').after('<span>sdfsdf4</span>')
+            
+            
+            //$('.element .a').remove()
+            //태그 자체를 지워준다.
+            
+            ///$('.element .a').wrap("<div class='aaaa'>")
+            
+        
+            //
+            $('.element').append($('.element').clone())
+        })
+    </script>
+</head>
+<body>
+    
+    <div class="element">
+        <span class="a">오늘도 저는 똑같은 하루를 보냈습니다.</span>
+    </div>
+    
+</body>
+</html>

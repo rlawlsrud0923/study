@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>vertical-align</title>
+<style>
+            
+        /*
+        vertical-align
+        display:
+                inline-block 
+                top
+                bottom
+                middle
+                
+                inline
+                text-top
+                text-bottom
+                baseline
+                
+                table-cell
+        */
+
+
+            /*.hellocontents{line-height:40px;}*/
+            
+            /*.hellocontents span{vertical-align:baseline;}*/
+
+
+        body{
+            text-align: center;
+            /*모든 text 가운데 정렬됨*/
+        }
+
+        .wrapper{
+            border: 1px tomato solid;
+            /*height: 200px;*/
+            /*line-height: 200px;*/
+            vertical-align: middle;
+        }
+
+        .wrapper div{
+            border: 1px tomato solid;
+            /*display: inline;*/
+            
+            display: inline-block;
+           
+            /*height값 정해주지 않으면 박스크기로 늘어남*/
+            /*display: table-cell;*/
+        }
+
+        .wrapper div:nth-child(1){width: 300px; height: 100px;}
+        .wrapper div:nth-child(2){width: 300px; height: 200px;}
+        .wrapper div:nth-child(3){width: 300px; height: 300px;}
+
+</style>
+</head>
+<body>
+    
+    <div class="text_contents">text text text<span> line-height line-height line-height </span>text text text</div>
+    
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    
+    
+</body>
+</html>

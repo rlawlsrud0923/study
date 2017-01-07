@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="achtor" content="김진경">
+  <title>background attachment 일부 제거</title>
+<style>
+
+/* 부모인 body와 html에 height값을 줘야 .wrap에 적용됨 */
+body,html{height: 100%}
+
+.wrap{height: 100%;border: 1px #f00 solid;
+      background-attachment: fixed;}
+
+.a{background-image: url(../img/a.jpg);}
+.b{background-image: url(../img/b.jpg);}
+.c{background-image: url(../img/c.jpg);
+  background-attachment: local;
+  height: 500px;
+  color: #fff;}
+.d{background-image: url(../img/d.jpg);}
+
+</style>
+</head>
+
+<body>
+
+  <div class="wrap a"></div>
+  <div class="wrap b"></div>
+    <div class="wrap c">
+      <h1>변신변신변신</h1>
+    </div>
+  <div class="wrap d"></div>
+
+</body>
+</html>

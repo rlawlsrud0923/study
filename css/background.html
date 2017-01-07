@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>background</title>
+  <style>
+
+/* background는 보여질 영역 설정해줘야 보임.
+background-image : 이미지룰 불러옴
+background-color : 색상
+background-position : 배경의 위치. x,y좌표로 이동됨.
+                      => top,right,bottom,left, center, % 적용됨
+background-repeat : 반복제어
+background-attchmant : 배경속성변형, ~에 박는다
+
+html5 들어오면서  추가된 것. =>호환성 떨어짐
+background-size
+background-gradient
+
+멀티백그라운드
+*/
+
+/*.bg{
+  background-color: rgb(255, 0, 0);                  
+  width: 500px; height: 500px;   <=보여질 영역 설정
+}*/
+
+.bg{
+  background-image: url(../img/Koala.jpg);
+  background-repeat: no-repeat;
+  /* position: 50% 50% = center  */
+  background-position: 50% 50%;
+  width: 500px; height: 500px;
+}
+
+.bg2{
+  background-color: rgb(300, 0, 80);
+  width: 1000px; height: 1000px;
+  background-position: 50% 50%
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="bg2"></div>
+</body>
+</html>

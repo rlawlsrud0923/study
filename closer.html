@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        
+        
+        
+        
+        
+    </style>
+    <script>
+        
+        console.log(aa('a')('b'))
+        
+        
+        //aa()() 괄호가 두개면 클로저함수
+        
+        
+        function aa(a){
+            
+           console.log(a)
+            
+            return function(x){
+                
+                console.log(a+x)
+                
+            }
+            
+        }
+        
+        
+    </script>
+    
+</head>
+<body>
+   
+   
+    
+</body>
+</html>

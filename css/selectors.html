@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>선택자 알기</title>
+<style>
+/*
+콤마 (,)선택자
+div,ul,li{border: 1px #f00 solid;}
+
+class 선택자 => .으로
+.menu{}
+
+id 선택자 => #으로
+#unit{}
+
+자식요소 선택자 => 한 칸 띄어쓰기 하는 행위 자체가 그 안의 자식요소를 선택하는 것.
+.menu ul{}  =>모든 menu안에 있는 모든 ul
+.menu>ul{}  =>모든 menu안에 있는 ul
+.menu .textul>ul li{}  =>모든 menu안에 있는 class="textul" 그 안에 있는 ul안에 모든 li
+
+class를 같이 선택하는 경우
+.menu ul .subul{}   => class="menu"안에 모든 ul 중 class="subul"인 요소
+
+다수 선택 (띄어쓰기 X)
+ul.subul.list-item{}   => ul인데 class="subul"와 class="list-item"를 가진 요소
+
+class 이름을 주지 않고 선택하는 경우
+.menu>ul>li:first-child{}  =>익스플로러 7,8,9 다 가능
+.menu>ul>li:last-child{}   =>8,9만 가능
+
+속성선택자
+li input[type=""]{}
+li a[href=""]{}
+
+*/
+
+/*기억해야할 기호 3가지
+* 모든 것
+^ 시작하는 것
+$ 끝나면
+*/
+li a[href^="이코"]{border: 1px #F00 solid;}
+li a[href*="라이"]{border: 1px #F00 solid;}
+li a[href$="스"]{border: 1px #F00 solid;}
+
+
+
+
+/* 넥스트(+)선택자
+.unit++li{}    유닛이라는 class를 가진 다음 다음 li
+.unit~li{}    유닛이라는 class를 가진 다음 모든 li
+*/
+.unit~li{border: 1px #f00 solid;}
+
+
+
+</style>
+</head>
+
+
+
+
+<body>
+<p class="unit">sdfsd</p>
+  <div class="menu">
+    <ul class="first-ul">
+      <li>text1
+        <ul class="subul">
+          <li>text1-1</li>
+          <li>text2-2</li>
+          <li class="unit">text3-3</li>
+          <li>text1-1</li>
+          <li>text2-2</li>
+          <a href="라이코스"><li>text3-3</li></a>
+        </ul>
+      </li>
+      <li>text2
+        <ul class="subul list-item">
+          <li><input type="text"></li>
+          <li><input type="button"></li>
+          <li>text3-3</li>
+        </ul>
+      </li>
+      <li>text3
+        <ul class="testul">
+          <li><input type="text"></li>
+          <li id="unit">text2-2</li>
+          <li>text3-3
+            <ul class="testul1">
+              <li><input type="text1"></li>
+              <li id="unit1">text2-2</li>
+              <li>text3-3</li>
+              <li><input type="text1"></li>
+              <li id="unit2">text2-2</li>
+              <li>text3-3</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+</body>
+</html>

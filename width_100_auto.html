@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>width 100 auto</title>
+    <style type="text/css">
+        .box{
+            border: 1px #F00 solid;
+            width: 500px; height: 500px;
+            margin: 0 auto;
+        }
+        .checked{
+            border: 1px #F00 solid;
+            height: 100px;
+            background:#CCC;
+        }
+        
+        
+        /*inner_box에 준 css에 주목해서 공부하기*/
+        
+        /*w값을 절대값으로 줬을 경우*/
+        /*.inner_box{*/
+            /*auto = 부모만큼*/
+            /*부모인 box를 넘어가지 못함*/
+        /*    width: auto; */
+        /*    margin: 0 100px;*/
+        /*}*/
+        
+        
+        /*w값을 상대값으로 줬을 경우*/
+        /*.inner_box{*/
+        /*    width: 100%; */
+        /*    margin: 0 100px;*/
+        /*}*/
+        
+        
+        
+        
+        /*float를 줬을 경우*/
+        .inner_box{
+            float: left;
+            width: 100%; 
+            /*margin: 0 100px;*/
+            margin: 20px auto;
+            /*margin auto 먹지 않는다*/
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <!--box를 window창이라고 생각하기-->
+    <div class="box">
+        <div class="inner_box checked"></div>
+    </div>
+    
+</body>
+</html>

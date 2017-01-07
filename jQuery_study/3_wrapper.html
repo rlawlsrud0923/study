@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wrapper</title>
+
+</head>
+<body>
+  <ul>
+           <li>test2</li>
+       </ul>
+       <ul class="foo">
+           <li>test</li>
+       </ul>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript">
+  /*
+  $를 사용하는 다른 라이브러리들과의 충돌을 배제하자.
+  $(element) = jQuery(element)
+
+  // 방법1 : $ 대신 jQuery를 사용하기
+  jQuery('body').html('hello world');
+
+  // 방법2 : $를 함수의 지역변수로 선언해서 외부에 있을지 모르는 타 라이브러리의 $와의 충돌을 예방
+  (function($){
+      $('body').html('hello world');
+  })(jQuery)
+  */
+
+  /* 제어 대상을 지정하는 방법
+
+  // 예제1. jQuery( selector, [context] )
+  (function($){
+                $('ul.foo').click( function() {
+                    $('li', this).css('background-color','red');
+                });
+            })(jQuery)
+
+  // 예제2. jQuery( element )
+  jQuery(document.body).css( "background-color", "tomato" );
+  */
+  </script>
+</body>
+</html>

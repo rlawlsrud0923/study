@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <script>
+	function goAdd()
+	{
+		var xx = document.getElementById("xvalue").value;
+		var yy = document.getElementById("yvalue").value;
+        var result = eval(xx)+eval(yy);
+       
+		//div 태그에 결과를 출력하기 
+		document.getElementById("result").innerHTML=result;
+		//div 태그는 innerHTML 속성을 이용해 값을 내보낸다 
+
+        /*
+		xx = 10;  둘이 같다 
+		xx ="10";*/
+	}
+  </script>
+ </head>
+ <body>
+ <!-- input 태그랑 form 태그는 name속성, id속성을 갖는다 
+	div나 테이블, span태그는 id속성을 갖는다 
+    name속성을 값을 서버로 전달해준다 
+	id 속성은 클라이언트에서 접근만 허용한다
+	name속성의 경우에는 중복이 가능하다 
+	id 는 반드시 하나만 중복불가 
+ -->
+ <form name ="myform"  action="get">
+	  사칙연산 <br/><br/>
+	  x : <input type="text" name="x" id="xvalue"><br/>
+	  y : <input type="text" name="y" id="yvalue"><br/>
+
+	  <input type="button"  value="+"  onclick="goAdd()">
+
+      <div id="result" style="width:300px;height:200px;background-color:#ccc">
+	  </div>
+
+ </form>
+
+ </body>
+</html>

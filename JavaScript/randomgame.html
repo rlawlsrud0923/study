@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<script type="text/javascript">
+
+var user = prompt("이름을 입력하세요")
+
+alert("자"+user+"를 만들어보자")
+alert("확인을 누르면 만들어집니다")
+
+var text1 = ["일단은","음....","오...","아...","이거"];
+console.log("Text List" + text1);
+
+var text2 = ["지능","재력","인복","재능","창의력","집중력"];
+var text3 = ["한스푼","한방울","한가득","한주먹","한바구니","완성","성공"];
+
+//console.log(text1.length)로 text1의 배열 개수 나옴.
+
+var random1 = Math.floor(Math.random() * text1.length);
+var random2 = Math.floor(Math.random() * text2.length);
+var random3 = Math.floor(Math.random() * text3.length);
+
+document.write(user + "님......" + text1[random1] + " " + text2[random2] + " " + text3[random3])
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
