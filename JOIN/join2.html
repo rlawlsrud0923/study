@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>가입 정보 입력</title>
+<style>
+      *{
+        margin:0; padding:0;
+        text-decoration: none;
+        /*font*/
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: '맑은 고딕','Malgun Gothic','돋움','dotum','Apple SD Gothic Neo','sans-serif';
+        color: #1e1e1e;
+        letter-spacing: -1px;
+      }
+      ul, ol{
+        list-style: none;
+      }
+      body{
+        background: #ececee;
+      }
+/**************************************************************************/
+      .wrap{
+        width: 700px; height: 1030px;
+        /*border: 1px #F00 solid;*/
+        background-color: #FFF;
+        /*position: relative;*/
+        margin: 0 auto;
+      }
+/**************************************************************************/
+      .header{
+        height: 90px;
+        border-bottom: 1px #e6e6e6 solid;
+      }
+      .header img{
+        width: 98px; height: 40px;
+        margin: 20px 301px;
+      }
+      /*.header a{display: block;}*/
+/**************************************************************************/
+/**************************************************************************/
+      .content{
+        width: 620px; height: 706px;
+        /*border: 1px tomato solid;*/
+        margin: 0 40px 100px 40px;
+        /*padding-top: 20px;*/
+      }
+/**************************************************************************/
+      .paging{
+        width: 48px; height: 6px;
+        margin: 14px auto 0 auto;
+      }
+      .paging a {
+        display:block;
+        float:left;
+        border: 3px solid #ddd;
+        margin:0 3px;
+        border-radius:15px;
+      }
+      .paging span {display:none}
+/**************************************************************************/
+      .wrap_title{
+        padding: 30px 0 39px;
+      }
+      .title{
+        font-family: '맑은 고딕','Malgun Gothic','돋움','dotum','sans-serif';
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: -1px;
+      }
+      .title h3{
+        display: inline;
+        font-size: 24px;
+      }
+      .title_desc{
+        overflow: hidden;
+        padding-top: 7px;
+        font-size: 14px;
+        color: #767676;
+        text-align: center;
+      }
+      .title_desc strong{
+        color: #306ad2;
+      }
+/**************************************************************************/
+      .wrap_box{
+        width: 620px; height: 544px;
+      }
+      .box{
+        width: 580px; height: 148px;
+        padding: 23px 20px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .box2{
+        width: 580px; height: 148px;
+        padding: 23px 20px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .box_title{
+        height: 50px;
+        padding-left: 18px;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 14px;
+        line-height: 50px;
+      }
+/**************************************************************************/
+      #id_title{
+        width: 140px; height: 40px;
+        float: left;
+      }
+      #userid{
+        width: 438px; height: 38px;
+        position: absolute;
+        width: 438px;
+        height: 38px;
+        line-height: 38px;
+        border: 0;
+        background: 0;
+        font-weight: normal;
+        text-indent: 15px;
+      }
+      label{
+            line-height: 38px;
+      }
+
+
+/**************************************************************************/
+      .wrap_btn{
+        position: relative;
+        min-height: 41px;
+        margin-top: 40px;
+        text-align: center;
+        /*border: 1px #F00 solid;*/
+        width: 620px; height: 119px;
+      }
+      #btn_next{
+        width: 220px; height: 60px;
+        background: #447de2;
+        font-size: 18px;
+        border-radius: 0;
+        color: #fff;
+        /*margin: 0 auto;*/
+        /*text-align: center;*/
+      }
+      #btn_back{
+        float: left;
+        width: 21px; height: 21px;
+        margin-right: 10px;
+        background-position: -90px -50px;
+        border-radius:15px;
+        background-color: #FFF;
+        border: 1px #CCC solid;
+      }
+      .wrap_back_btn{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        line-height: 21px;
+        width: 83px; height: 21px;
+        /*span*/
+        font-size: 14px;
+        font-family: '맑은 고딕','Malgun Gothic','돋움','dotum','Apple SD Gothic Neo','sans-serif';
+        color: #1e1e1e;
+        letter-spacing: -1px;
+      }
+      .box_content{
+        border-top: 1px solid #e6e6e6;
+      }
+/**************************************************************************/
+      .footer{
+        height: 115px;
+        border-top: 1px #e6e6e6 solid;
+        padding-top: 18px;
+        /*a태그 가운데 정렬시키기*/
+        text-align: center;
+      }
+      .footer a{
+        color: #767676;
+        font: bold;
+        display: inline-block;
+        text-decoration: none;
+        /*font속성*/
+        font-family: '돋움','dotum','Apple SD Gothic Neo','sans-serif';
+        font-size: 12px;
+        text-align: center;
+      }
+      .bar{
+        margin: 0 7px 0 11px;
+        color: #d4d4d4;
+      }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="header">
+    <h1><a href="http://www.daum.net/"><img src="http://postman.kr/newsletter/20130507/images/inside02_img01.gif" alt="다음 로고"></a></h1>
+  </div>
+<!-- content시작!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+  <div class="content">
+
+    <div class="paging">
+    <a href="#"><span>1</span></a>
+    <a href="#"><span>2</span></a>
+    <a href="#"><span>3</span></a>
+    </div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+    <div class="wrap_title">
+      <div class="title"><h3>가입 정보 입력</h3></div>
+      <div class="title_desc"><span>로그인 정보 및 가입 정보를 입력하세요.</span></div>
+    </div>
+<!-- input!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+    <div class="wrap_box">
+
+      <div class="box">
+        <form action="join2.html" method="post">
+          <ul class="box_content">
+            <li>
+              <ul id="id_title"><label for="userid">Daum 아이디</label></ul>
+              <li><input type="text" value="" id="userid" placeholder="아이디" /></li>
+            </li>
+          </ul>
+      </div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+      <div class="box2">
+
+        <div class="wrap_btn">
+          <div class="wrap_back_btn">
+            <button type="button" id="btn_back"><</button>
+            <span>이전으로</span>
+          </div>
+          <button type="submit" id="btn_next">다음단계</button>
+        </div>
+      </div>
+  </div>
+<!-- footer시작!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+  <div class="footer">
+    <a href="http://policy.daum.net/info/info">서비스 약관</a>
+    <span class="bar">|</span>
+    <a href="http://policy.daum.net/info_protection/info_protection">개인정보처리방침</a>
+    <span class="bar">|</span>
+    <a href="http://cs.daum.net/faq/59/8034.html">회원가입 도움말</a>
+    <br/>
+    <a href="http://www.kakaocorp.com/main">© Kakao Corp.</a>
+  </div>
+</div>
+</body>
+</html>
