@@ -28,28 +28,52 @@
 }
 
 .menu{
-  /*position: absolute;
+  /*
   bottom: 0;
   left: 0;
-  margin-top: 300px;
+
   line-height: 10px;
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 10px;*/
+  */
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  /*margin-top: 300px;
+  margin: auto;*/
   float: left;
-  width: 876px; height: 50px;
+  /*width: 876px;*/
+  width: 50%;
+  height: 50px;
 
 }
-ul li a{
-  font-weight: 500 !important;
+
+.menu center{
+  float:left;
+}
+
+ul li{
+  float: left;
+  /*width: 120px;*/
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-size: 14px;
   text-shadow: 2px 2px 3px #222;
-  display: block;
-  text-decoration: none;
+  /*display: block;*/
+}
+
+a{
+  font-size: 14px;
   color: #FFF;
+  /*margin-right: 20px;*/
+  margin: 0 20px 0 0;
+}
+#last_a{
+  margin-right: 0;
+}
+.menu a:hover {
+    color: #7b9c75;
 }
 </style>
 </head>
@@ -60,34 +84,34 @@ ul li a{
 
   <div class="menu">
     <ul>
-      <li><center><a href="#">PROFILE</a></center></li>
+      <li><center><a href="#">profile</a></center></li>
 
-      <li><center><a href="#">SCHEDULE</a></center></li>
+      <li><center><a href="#">schedule</a></center></li>
 
-      <li><center><a href="#">NOTICE</a></center>
-        <ul>
+      <li><center><a href="#">notice</a></center>
+        <!-- <ul>
           <li><a href="#">일반 공지</a></li>
           <li><a href="#">정회원 공지</a></li>
           <li><a href="#">기사</a></li>
-        </ul>
+        </ul> -->
       </li>
 
-      <li><center><a href="#">BOARD</a></center>
-        <ul>
+      <li><center><a href="#">board</a></center>
+        <!-- <ul>
           <li><a href="#">나무들의 이야기</a></li>
           <li><a href="#">나무들의 속삭임</a></li>
-        </ul>
+        </ul> -->
       </li>
 
-      <li><center><a href="#">DATA</a></center>
-        <ul>
+      <li><center><a href="#">data</a></center>
+        <!-- <ul>
           <li><a href="#">공식 자료</a></li>
           <li><a href="#">예전 자료</a></li>
-        </ul>
+        </ul> -->
       </li>
 
-      <li><center><a href="#">FROM.KYO</a></center></li>
-      <li><center><a href="#">LOGIN</a></center></li>
+      <li><center><a href="#">from.kyo</a></center></li>
+      <li><center><a href="#" id="last_a">login</a></center></li>
     </ul>
   </div>
 </div>
