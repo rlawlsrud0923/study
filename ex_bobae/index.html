@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>주리짱 보배드림 국내 1위 중고차 쇼핑몰</title>
+
+  <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+    body,html{height:100%;}
+    *{margin:0; padding:0; font-family:'dotum','돋움'; font-size:1em; color:#373737;}
+    ul,ol,dl,dd,dt,li{list-style:none;}
+    em,address{font-style: normal;}
+    img{border:0;}
+    .line{outline:1px solid #F00;}
+    a{color:#666; text-decoration:none;}
+    a.col37{color:#373737;}
+/* gnb 영역 */
+    .gnb{height:30px; border-bottom:1px solid #d5d0cc; background:#f8f8f8;}
+/* gnb 영역 */
+    .gnb_con{width:990px; margin:0 auto;height:100%;}
+/* gnb 영역 > 왼쪽 컨텐츠 */
+    .gnb_left{position:relative;padding-top:8px;font-size:.75em;}
+    .gnb_left li{position:relative;float:left;margin-right:10px;}
+    .gnb_left li .bookmarkoff:before{content:url(images/icon_btn/icon_bookmarkoff.jpg);}
+    [class^=rk_img]{display:inline-block;text-indent:-9999px;}
+    .gnb_left li em{width:14px;height:13px;background:url("images/icon_btn/icon_num10.jpg") no-repeat;}
+    .gnb_left li a{vertical-align:10px;}
+    .gnb_left li .rk_img_up{position:absolute; top:3px; width:7px; height:7px; background:url("images/icon_btn/icon_uparrow.jpg") no-repeat;}
+    .gnb_left li .rk_step{padding-left:8px;font-size:0.6em;}
+/* gnb 영역 > 오른쪽 컨텐츠 */
+    .downpop{width:12px; height:12px; display:inline-block; background:url("images/icon_btn/icon_menudown.jpg") no-repeat; text-indent:-9999px;}
+    .gnb_right{float:right;}
+    .gnb_right dd{float:left; font-size:0.75em; padding:0 2px; color:#666;}
+    .gnb_right dd:after{content:"\007C";color:#d1d1d1;padding:0 2px;}
+    .gnb_right dd.last:after{content:"";}
+/* lnb 영역 */
+    .lnb{width:990px;height:183px;margin:0 auto;position:relative;}
+/* lnb 영역 > 헤드(오른쪽) */
+    .head{height:100px;margin:0 0 7px;}
+    .head .header{position:absolute;left:0; padding:34px 0 12px;}
+    .head h1{width:105px; height:27px; text-indent:-9999px; background:url("images/logo_main.jpg") no-repeat;}
+    .head ol{height:13px;margin-top:10px; padding:10px 0 0;}
+    .head ol li{float:left;}
+    .head li:after{content:"\007C";color:#d1d1d1;padding:0 4px;}
+    .head li.last:after{content:"";}
+    .head ol li a{display:inline-block;font-family:'Nanum Gothic','나눔고딕';font-size:0.75em;font-weight:500;vertical-align:top;}
+/* lnb 영역 > 검색란(가운데) */
+    .lnb .search{height: 73px;position:absolute;left:387px;padding:19px 0 0;}
+    .lnb .search .banner{width:237px;margin:0 auto;}
+    .lnb .search .banner img{display:block;}
+    .lnb .search input#search{float:left;width:228px;height:13px; padding:5px 5px 3px;border:2px solid #3b5999;}
+    .lnb .search input#searchbtn{width: 38px;height: 25px;border:0;}
+/* lnb 영역 > 이벤트란(오른쪽) */
+    .lnb .event{position:absolute;right:0;padding:16px 0 0;}
+    .lnb .event a{display:block;}
+    .lnb .event>img{display:block;}
+    .lnb .eventbtn{position:absolute;left:0;bottom:0;}
+    [class^=event_bt]{border:1px solid #dfdfdf;display:block;width:13px;height:13px;float: left;}
+    .event_bt_prev{background:url("images/icon_btn/event_prev.jpg") no-repeat;}
+    .event_bt_next{background:url("images/icon_btn/event_next.jpg") no-repeat;}
+/* 상단 네비게이션 */
+    .nav{position:relative;height:39px;background:#3b5999;}
+/* 상단 네비게이션 > 메인메뉴(오른쪽) */
+    .navmain li{float:left;position:relative;}
+    .navmain li a{display:block; line-height:15px; font-family:'Nanum Gothic','나눔고딕'; font-size:0.94em; color:#FFF; font-weight:600; padding:11px 10px 13px;}
+    .navmain li span{display:inline-block;height:15px;border:1px solid #768bb7;position:absolute;top:12px;right:0;}
+    .navmain li a:hover{background:#5785f2;}
+/* 상단 네비게이션 > 공지(왼쪽) */
+    .navnotice{position:absolute;top:12px;right:10px;}
+    [class^=nav_not]{float: left;color:#FFF;}
+    .nav_not_ti{display:inline-block;font-size:11px;font-weight:bold;}
+    .nav_not_ti:after{content:url("images/icon_btn/nav_notice.jpg");padding:0 6px 5px 3px;}
+    .nav_not_tg{display:block;font-size:12px;font-weight:normal;}
+/* 상단 네비게이션 서브메뉴 */
+    .sub{position: relative;height:37px;border-bottom:1px solid #c7cbce;}
+
+/* 사이버매장 */
+    .cyber{float:left;padding:10px;}
+    .cyber dt{padding:2px 1px;height:13px; float:left; }
+    .cyber dd{float:left;color:#ddd;}
+    .cyber dt a{display:block;background:url("images/text/sub_dl_cyber.jpg") no-repeat; text-indent:-9999px;}
+    .cyber .cb_1{width:53px; background-position:0 0;}
+    .cyber .cb_2{width:54px; background-position:-64px 0;}
+    .cyber .cb_3{width:53px; background-position:-129px 0;}
+    .cyber .cb_4{width:64px; background-position:-193px 0;}
+    .cyber .cb_5{width:66px; background-position:-268px 0;}
+    .cyber .cb_6{width:68px; background-position:-345px 0;}
+    .cyber .cb_7{width:53px; background-position:-424px 0;}
+    .cyber .cb_8{width:54px; background-position:-488px 0;}
+    .cyber .cb_9{width:74px; background-position:-553px 0;}
+/* 방문자수(오른쪽) */
+    .visit{float:right;}
+    .visit dl, .visit dt, .visit dd{float:left;font-size:0.85em;padding:0 2px;font-weight:bold;line-height:37px;}
+    .visit dl dd{color:#005dde;}
+  </style>
+
+</head>
+<body>
+
+<!-- GNB 영역 시작 -->
+  <div class="gnb">
+<!-- GNB 영역 > 컨텐츠 시작 -->
+    <div class="gnb_con">
+<!-- GNB 영역 왼쪽 컨텐츠 시작 -->
+      <ul class="gnb_left">
+        <!-- <img src="images/icon_btn/icon_bookmarkoff.jpg" alt="즐겨찾기 아이콘"> -->
+        <li><a href="#none" class="bookmarkoff col37">즐겨찾기</a></li>
+        <li>
+          <!-- <img src="images/icon_btn/icon_num10.jpg" alt="순위 아이콘" /> -->
+          <a href="#none" class="ahover col37">
+            <em class="rk_img_num">10</em>
+            <span class="rk_text">기아 k5 하이브리드 (12년식)</span>
+            <span class="rk_img_up">상승</span>
+            <span class="rk_step">41</span>
+          </a>
+          <!-- <img src="images/icon_btn/icon_uparrow.jpg" alt="순위 상승 아이콘" /> -->
+        </li>
+      </ul>
+<!-- GNB 영역 왼쪽 컨텐츠 끝 -->
+
+<!-- GNB 영역 오른쪽 컨텐츠 시작 -->
+      <dl class="gnb_right">
+        <dd><a href="#none">로그인</a></dd>
+        <dd><a href="#none">회원가입</a></dd>
+        <dd><a href="#none">마이페이지<span class="downpop">열기</span></a></dd>
+        <dd><a href="#none">쪽지</a></dd>
+        <dd><a href="#none">찜한차량</a></dd>
+        <dd><a href="#none">고객센터</a></dd>
+        <dd><a href="#none">전체메뉴<span class="downpop">열기</span></a></dd>
+        <dd class="last"><a href="#none">모바일</a></dd>
+      </dl>
+<!-- GNB 영역 오른쪽 컨텐츠 끝 -->
+    </div>
+<!-- GNB 영역 > 컨텐츠 끝 -->
+  </div>
+<!-- GNB 영역 끝 -->
+
+<!-- lnb 영역 시작 -->
+  <div class="lnb">
+<!-- lnb 영역 > 헤드(오른쪽) 시작 -->
+    <div class="head">
+      <div class="header">
+        <h1>보배드림</h1>
+        <ol>
+          <li><a href="#none">인기중고차</a></li>
+          <li><a href="#none">오토바이</a></li>
+          <li><a href="#none">용품장터</a></li>
+          <li><a href="#none">협력업체</a></li>
+          <li class="last"><a href="#none">이벤트</a></li>
+        </ol>
+      </div>
+<!-- lnb 영역 > 헤드(오른쪽) 끝 -->
+
+<!-- lnb 영역 > 검색란(가운데) 시작 -->
+    <div class="search">
+      <div class="banner">
+        <img src="images/banner/banner_search.jpg" alt="애니카 다이렉트 광고" />
+      </div>
+      <label>
+        <input type="text" name="search" id="search" />
+        <input type="image" src="images/icon_btn/searchbtn.jpg" name="search" id="searchbtn" alt="검색" />
+        </label>
+    </div>
+<!-- lnb 영역 > 검색란(가운데) 끝 -->
+
+<!-- lnb 영역 > 이벤트란(오른쪽) 시작 -->
+    <div class="event">
+      <a href="#none"><img src="images/banner/event_banner.jpg" alt="뮤지컬 셜록홈즈 공연초대 이벤트" /></a>
+      <div class="eventbtn">
+        <a href="#none" class="event_bt_prev"></a>
+        <a href="#none" class="event_bt_next"></a>
+      </div>
+    </div>
+<!-- lnb 영역 > 이벤트란(오른쪽) 끝 -->
+    </div>
+<!-- 상단 네비게이션 시작 -->
+    <div class="nav">
+      <ol class="navmain">
+        <li><a href="#none">사이버매장</a><span></span></li>
+        <li><a href="#none">국산중고차</a><span></span></li>
+        <li><a href="#none">수입중고차</a><span></span></li>
+        <li><a href="#none">내차팔기</a><span></span></li>
+        <li><a href="#none">커뮤니티</a><span></span></li>
+        <li><a href="#none">더보기</a></li>
+      </ol>
+      <dl class="navnotice">
+        <dt class="nav_not_ti">공지</dt>
+        <dd class="nav_not_te"><a href="#none" class="nav_not_tg">보배드림 어플 업데이트 안내</a></dd>
+      </dl>
+    </div>
+<!-- 상단 네비게이션 끝 -->
+<!-- 상단 네비게이션 서브메뉴 시작 -->
+    <div class="sub">
+  <!-- 사이버매장 -->
+      <dl class="cyber">
+        <dt><a href="#none" class="cb_1">국산차매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_2">수입차매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_3">승용차매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_4">스포츠카매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_5">4륜/suv매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_6">벤/승합차매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_7">튜닝카매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_8">올드카매장</a></dt><dd>&#124;</dd>
+        <dt><a href="#none" class="cb_9">오토갤러리매장</a></dt>
+      </dl>
+  <!-- 사이버매장 끝 -->
+
+  <!-- 방문자수(왼쪽) 시작 -->
+    <div class="visit">
+      <dl class="vi_today">
+        <dt>오늘방문</dt>
+        <dd>981,478</dd>
+      </dl>
+      <dl class="vi_yesterday">
+        <dt>어제방문</dt>
+        <dd>981,478</dd>
+      </dl>
+    </div>
+  <!-- 방문자수(왼쪽) 끝 -->
+    </div>
+<!-- 상단 네비게이션 서브메뉴 끝 -->
+
+  </div>
+<!-- lnb 영역 끝 -->
+
+
+</body>
+</html>
