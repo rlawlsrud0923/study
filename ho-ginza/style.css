@@ -1,49 +1,61 @@
 *{
   margin: 0; padding: 0;
-  outline: 1px coral solid;
   list-style: none;
+
+  font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
+  color: #606166;
+  outline: 1px coral solid;
 }
+
 a{text-decoration: none;}
 
+.l{
+  width: 1px;
+  background-color: #b2b2b2;
+}
+
+.partition{
+  width: 135px; height: 1px;
+  background-color: #b2b2b2;
+}
 
 /* intro ********************************************************************/
-.intro{
-  width: 100%; height: 100%;
-  min-height: 706px;
-  max-width: 1920px;
-  min-width: 1160px;
-  position: absolute; top: 0px; left: 0px;
-  z-index: 7777;
-  background: url("img/navy_bg.png");
-  background-repeat: repeat;
-  background-size: 220px 220px;
-  display: block;
-  opacity: 1.0;
-}
-.intro .logo{
-  width: 228px;
-  height: 231px;
-  position: absolute;
-  top: 233px;
-  left: 68.828125%;
-}
-.intro .intro_txt{
-  width: 69px;
-  position: absolute;
-  top: 176px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0 auto;
-}
-.intro .line{
-  width: 100%;
-  height: 2px;
-  background-color: #cfbe72;
-  position: absolute;
-  bottom: 16px;
-  left: 0;
-}
+  .intro{
+    width: 100%; height: 100%;
+    min-height: 706px;
+    max-width: 1920px;
+    min-width: 1160px;
+    position: absolute; top: 0px; left: 0px;
+    z-index: 7777;
+    background: url("img/navy_bg.png");
+    background-repeat: repeat;
+    background-size: 220px 220px;
+    display: block;
+    opacity: 1.0;
+  }
+  .intro .logo{
+    width: 228px; height: 231px;
+    position: absolute;
+    top: 233px;
+    left: 68.828125%;
+  }
+  .intro .intro_txt{
+    width: 69px; height: 297px;
+    position: absolute;
+    top: 176px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .intro .line{
+    width: 100%;
+    height: 2px;
+    background-color: #cfbe72;
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+  }
 /***************************************************************************/
 
 
@@ -52,82 +64,217 @@ a{text-decoration: none;}
 
 /* content *****************************************************************/
 
-/* header */
-.header{
-  height: 850px;
-  background: url("img/main_img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 48px;
-}
+/* header *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  .header{
+    height: 850px;
+    background: url("img/main_img.png") no-repeat;
 
-/* main_icon */
-.main_icon{
-  position: absolute;
-  top: 16px;
-  left: 20px;
-}
+    background-size: cover;
+    margin-bottom: 48px;
+  }
 
-/* main_logo * main_txt * main_logo */
-#main_logo{
-  width: 228px; height: 231px;
-  position: absolute;
-  top: 233px;
-  left: 68.828125%;
-}
-#main_txt{
-  width: 114px; height: 247px;
-  position: absolute;
-  top: 180px;
-  left: 46.953125%;
-}
-#main_txt_right{
-  width: 52px; height: 220px;
-  position: absolute;
-  top: 66px;
-  left: 90%;
-}
-#icon_scroll{
-  width: 46px; height: 46px;
-  position: absolute;
-  top: 602px;
-  left: 52.671875%;
-}
+/* main_icon *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  .main_icon{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  }
 
-
-/* lnb */
-.lnb{
-  width: 1000px;
-  height: 100px;
-  margin: 0 auto 60px;
-}
-#lnb_logo{
-  display: inline;
-  float: left;
-}
-#lnb_logo img{
-  height: 58px;
-  padding-right: 314px;
-  border-right: 1px #b2b2b2 solid;
-}
-.o{
-  width: 4px; height: 4px;
-  margin-top: 7px;
-  border-radius: 50px;
-  background-color: #000;
-}
-.lnb_list{
-  display: inline;
-}
-.lnb_list li{
-  float: left;
-  margin-right: 10px;
-}
-.lnb_list li:first-of-type{
-  margin-left: 65px;
+/* main_logo * main_txt * main_logo  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  #main_logo{
+    width: 228px; height: 231px;
+    position: absolute;
+    top: 233px;
+    left: 68.828125%;
+  }
+  #main_txt{
+    width: 114px; height: 247px;
+    position: absolute;
+    top: 180px;
+    left: 46.953125%;
+  }
+  #main_txt_right{
+    width: 52px; height: 220px;
+    position: absolute;
+    top: 66px;
+    left: 90%;
+  }
+  #icon_scroll{
+    width: 46px; height: 46px;
+    position: absolute;
+    top: 602px;
+    left: 52.671875%;
+  }
 
 
+/* lnb *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  .lnb_area{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 60px;
+    background-color: #fff;
+  }
+  .lnb{
+    width: 1000px;
+    height: 58px;
+    margin: 0 auto;
+    padding: 21px 0;
+  }
+  .fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .lnb .l{
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+  }
 
-/* notice */
+  #lnb_logo{
+    display: inline;
+    float: left;
+  }
+  #lnb_logo img{
+    height: 58px;
+    padding-right: 314px;
+  }
+  .o{
+    width: 4px; height: 4px;
+    margin-top: 7px;
+    border-radius: 50px;
+    background-color: #000;
+  }
+  .lnb_list{
+    display: inline;
+  }
+  .lnb_list li{
+    float: left;
+    margin: 14.5px 10px 0 0;
+  }
+  .lnb_list li:first-of-type{
+    margin-left: 65px;
+  }
+
+
+/*notice *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  .notice{
+    width: 1000px; height: 72px;
+    margin: 0 auto 122px;
+  }
+  .notice>img{
+    margin-left: 55px;
+    float: left;
+  }
+  .notice dl{
+    margin-left: 24px;
+    float: left;
+    /*display: inline;*/
+  }
+  .notice dt{
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .notice dd{
+    font-size: 11px;
+        line-height: 1.7em;
+  }
+
+
+
+/*about *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  .about{
+    width: 100%; height: 560px;
+    margin-bottom: 120px;
+    background: url("img/navy_bg.png") repeat;
+    /*background-size: 220px 220px;*/
+  }
+  .line{
+    height: 2px;
+    background-color: #cfbe72;
+    margin-top: 75px;
+  }
+  #about_txt{
+    /*position: absolute;
+    top: 72px;
+    left: 26.07%;*/
+    margin-top: 72px;
+    margin-left: 14%;
+  }
+  #about_img{
+    float: right;
+    width: 54.765625%;
+    height: 560px;
+  }
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+
+  .partition{
+
+  }
+
+/*menu *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  .menu{
+    height: 648px;
+  }
+  #menu_img{
+    width: 61.875%;
+    float: left;
+    margin-bottom: 70px;
+  }
+  .menu_tit{
+    width: 38.125%;
+    float: right;
+  }
+  #menu_tit{
+    margin-top: 0px;
+    margin-left: 38.125%;
+  }
+
+
+
+/*menu_list *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  #menu_list{
+    width: 992px;
+    /*margin-bottom: 122px;*/
+    margin: 0 auto 122px;
+  }
+  #menu_list p{
+    margin-top: 10px;
+  }
+
+/*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+
+  #partition_2{
+    height: 74px;
+  }
+
+
+
+
+/*access *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
+  #access{
+    height: 438px;
+    background-color: #FFB005;
+  }
+  #access_txt{
+    width: 38.046875%;
+  }
+
+  /* map */
+  #map_area{
+    /*z-index: 3;*/
+    float: right;
+    height: 438px;
+    margin-left: 39%;
+    /*width: 100%;*/
+    /*padding: 0px;
+    border-width: 0px;
+    margin: 0px;*/
+    background-color: #F00;
+  }
+
 
 /***************************************************************************/
