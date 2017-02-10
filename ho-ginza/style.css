@@ -261,12 +261,25 @@ a{text-decoration: none;}
   }
   #access_txt{
     width: 38.046875%;
+    font-size: 12px;
+    line-height: 1.8em;
+  }
+  #access_tit{
+    /*float: left;*/
+    position: relative;
+    left: 50%;
+    /*margin-left: 50%;*/
+  }
+  #access_tit ul li{
+    /*position: relative;
+    left: 70%;*/
+    margin-left: 60%;
   }
 
   /* map */
   #map_area{
     /*z-index: 3;*/
-    float: right;
+    float: left;
     height: 438px;
     margin-left: 39%;
     /*width: 100%;*/
