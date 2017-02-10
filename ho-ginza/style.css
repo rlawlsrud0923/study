@@ -2,9 +2,11 @@
   margin: 0; padding: 0;
   list-style: none;
 
+  outline: 1px coral solid;
+}
+body{
   font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
   color: #606166;
-  outline: 1px coral solid;
 }
 
 a{text-decoration: none;}

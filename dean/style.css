@@ -1,0 +1,55 @@
+*{
+  margin: 0; padding: 0;
+  outline: 1px yellow solid;
+}
+body{
+
+}
+
+ul{list-style:none;}
+a{text-decoration: none;}
+
+#container{}
+
+  /* header */
+  header{
+    background: url("img/album_1901x950.jpg");
+    background-position: center top;
+    width: 100%;
+    height: 950px;
+  }
+
+/******************************************************************************/
+
+  /* gnb */
+  #gnb_wrap{
+    height: 95px;
+    background-color: #000;
+    color: #fcbe46;
+    padding-top: 20px;
+  }
+  #gnb{
+    width: 65%;
+    margin: 0 auto;
+  }
+  #gnb img{
+    float: left;
+  }
+  #gnb ul{
+    float: right;
+    margin-top: 20px;
+  }
+  #gnb li{
+    float: left;
+    margin-right: 40px;
+  }
+  #gnb li:last-child{margin-right: 0;}
+
+/******************************************************************************/
+
+  /* content */
+  #content{
+    background-color: #000;
+    width: 65%;
+    margin: 0 auto;
+  }
