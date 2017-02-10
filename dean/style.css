@@ -2,14 +2,23 @@
   margin: 0; padding: 0;
   outline: 1px yellow solid;
 }
-body{
-
-}
-
+body{color: #FFF;}
 ul{list-style:none;}
 a{text-decoration: none;}
+.yel{color: #fcbe46;}
+.btn{
+  background: #fcbe46;
+  /*height: 38px;*/
+  font-size: 10px;
+  width: 76px;
+  padding: 13px 30px;
+}
 
-#container{}
+/******************************************************************************/
+
+  #container{
+    background-color: #000;
+  }
 
   /* header */
   header{
@@ -25,11 +34,11 @@ a{text-decoration: none;}
   #gnb_wrap{
     height: 95px;
     background-color: #000;
-    color: #fcbe46;
     padding-top: 20px;
   }
   #gnb{
-    width: 65%;
+    /*width: 65%;*/
+    width: 1280px;
     margin: 0 auto;
   }
   #gnb img{
@@ -38,10 +47,14 @@ a{text-decoration: none;}
   #gnb ul{
     float: right;
     margin-top: 20px;
+    text-transform: capitalize;
   }
   #gnb li{
     float: left;
     margin-right: 40px;
+  }
+  #gnb li:nth-child(3){
+    text-transform: uppercase;
   }
   #gnb li:last-child{margin-right: 0;}
 
@@ -49,7 +62,78 @@ a{text-decoration: none;}
 
   /* content */
   #content{
-    background-color: #000;
-    width: 65%;
+    /*width: 65%;*/
+    width: 1280px;
     margin: 0 auto;
   }
+  .logo_300x188{
+    text-align: center;
+    margin-top: 50px; margin-bottom: 240px;
+  }
+
+  /* purchase */
+  #purchase{
+    text-align: center;
+    font-family: Montserrat;
+  }
+  #purchase p{
+    margin-bottom: 20px;
+  }
+  #purchase p:nth-of-type(3){
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+
+  /* button */
+  #purchase a{color: #000;}
+
+  /* purchase_itunes button */
+  .purchase_itunes{
+    height: 38px;
+    text-transform: uppercase;
+    margin-left: 40%;
+    margin-bottom: 20px;
+  }
+  .purchase_itunes li{
+    float: left;
+  }
+
+  /* purchase button */
+  .purchase_{
+    height: 38px;
+    margin-left: 22%;
+    margin-bottom: 30px;
+  }
+  .purchase_ li{
+    float: left;
+  }
+
+/******************************************************************************/
+
+  /* soundcloud */
+  #soundcloud{
+    width: 810px;
+    height: 353px;
+    margin: 0 auto 300px;
+  }
+
+/******************************************************************************/
+
+  /* M/V */
+  #mv{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #mv span{
+    font-weight: 900;
+  }
+
+  .studio_box{
+    width: 47%;
+    float: left;
+    height: 357px;
+  }
+  .studio{
+    padding left: 15px; padding right: 15px;
+  }
+/******************************************************************************/
