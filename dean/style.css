@@ -6,12 +6,27 @@ body{color: #FFF;}
 ul{list-style:none;}
 a{text-decoration: none;}
 .yel{color: #fcbe46;}
+.fix{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .btn{
   background: #fcbe46;
   /*height: 38px;*/
   font-size: 10px;
   width: 76px;
   padding: 13px 30px;
+}
+.play_btn{
+  background-color: #303030;
+  color: #FFF;
+}
+.download_btn{
+  background-color: #fcbe46;
+  color: #FFF;
 }
 
 /******************************************************************************/
@@ -31,7 +46,7 @@ a{text-decoration: none;}
 /******************************************************************************/
 
   /* gnb */
-  #gnb_wrap{
+  .gnb_wrap{
     height: 95px;
     background-color: #000;
     padding-top: 20px;
@@ -66,7 +81,7 @@ a{text-decoration: none;}
     width: 1280px;
     margin: 0 auto;
   }
-  .logo_300x188{
+  #content_logo{
     text-align: center;
     margin-top: 50px; margin-bottom: 240px;
   }
@@ -87,24 +102,24 @@ a{text-decoration: none;}
   /* button */
   #purchase a{color: #000;}
 
-  /* purchase_itunes button */
-  .purchase_itunes{
+  /* itunes streaming btn */
+  #itunes{
     height: 38px;
     text-transform: uppercase;
     margin-left: 40%;
     margin-bottom: 20px;
   }
-  .purchase_itunes li{
+  #itunes li{
     float: left;
   }
 
-  /* purchase button */
-  .purchase_{
+  /* purchase_album btn*/
+  #purchase_album{
     height: 38px;
     margin-left: 22%;
     margin-bottom: 30px;
   }
-  .purchase_ li{
+  #purchase_album li{
     float: left;
   }
 
@@ -119,7 +134,7 @@ a{text-decoration: none;}
 
 /******************************************************************************/
 
-  /* M/V */
+  /* MV */
   #mv{
     text-align: center;
   }
@@ -157,6 +172,7 @@ a{text-decoration: none;}
   /* news */
   #news{
     margin-top: 150px;
+    margin-bottom: 120px;
     text-align: center;
   }
   #news h1{
@@ -164,7 +180,81 @@ a{text-decoration: none;}
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
     font-family: 'Megrim';
+  }
+
+  .news{
+    width: 840px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .news_box{
+    float: left;
+    width: 400px; height: 550px;
+    margin-top: 40px;
+  }
+  .news_box dt:first-of-type{
+    width: 400px;
+    height: 400px;
+  }
+  .news_box:nth-child(odd){
+    margin-right: 40px;
+  }
+  .news dd:nth-child(2){
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .news_box p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0.65rem;
+  }
+
+  .news_box ul{
+    margin-top: 10px;
+    width: 400px; height: 25px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .news_box li{
+    float: left;
+  }
+  .news_box a{
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 25px;
+    display: inline-block;
+  }
+
+/******************************************************************************/
+
+  /* sns */
+  #sns{
+    height: 222px;
+    margin-bottom: 150px;
+  }
+  #sns i{
+    font-size: 30px;
+  }
+  .icon_box{
+    width: 96px; height: 45px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  #instagram_box{
+    height: 172px;
+    float: left;
+  }
+  #twitter_box{
+    /*padding-left: 0.9375em;
+    padding-right: 0.9375em;*/
+    float: right;
+    width: 495px; height: 172px;
+    padding: 0 15px;
   }
