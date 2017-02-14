@@ -28,7 +28,13 @@ a{text-decoration: none;}
   background-color: #fcbe46;
   color: #FFF;
 }
-
+h1{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  font-family: 'Megrim';
+}
 /******************************************************************************/
 
   #container{
@@ -49,7 +55,9 @@ a{text-decoration: none;}
   .gnb_wrap{
     height: 95px;
     background-color: #000;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
+    font-family: 'Comfortaa';
+    font-size: 13px;
   }
   #gnb{
     /*width: 65%;*/
@@ -58,11 +66,15 @@ a{text-decoration: none;}
   }
   #gnb img{
     float: left;
+    margin-top: 20px;
+    margin-left: 15px;
   }
   #gnb ul{
     float: right;
-    margin-top: 20px;
+    height: 60px;
     text-transform: capitalize;
+    padding-right: 15px;
+    line-height: 95px;
   }
   #gnb li{
     float: left;
@@ -83,13 +95,14 @@ a{text-decoration: none;}
   }
   #content_logo{
     text-align: center;
-    margin-top: 50px; margin-bottom: 240px;
+    margin-top: 100px; margin-bottom: 240px;
   }
 
   /* purchase */
   #purchase{
     text-align: center;
     font-family: Montserrat;
+    padding-top: 250px;
   }
   #purchase p{
     margin-bottom: 20px;
@@ -176,12 +189,7 @@ a{text-decoration: none;}
     text-align: center;
   }
   #news h1{
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 72px;
     margin-bottom: 90px;
-    font-family: 'Megrim';
   }
 
   .news{
@@ -236,11 +244,13 @@ a{text-decoration: none;}
 
   /* sns */
   #sns{
-    height: 222px;
-    margin-bottom: 150px;
+    padding-bottom: 100px;
   }
   #sns i{
     font-size: 30px;
+  }
+  .sns_header{
+    margin-bottom: 250px;
   }
   .icon_box{
     width: 96px; height: 60px;
@@ -256,17 +266,81 @@ a{text-decoration: none;}
     padding: 0 15px;
     text-align: center;
   }
-  .twitter_txt{
+  #twitter_txt{
     margin-top: 30px;
   }
 
   /* instagram */
   #instagram{
-    margin-top : 100px;
+    width: 830px;
+    /*margin-top : 100px;*/
+    margin: 0 auto;
+    padding: 0 15px;
     text-align: center;
+    overflow: hidden;
   }
   #instagram img{
-    /*margin: 0 atuo;*/
+    width: 100%;
+    margin-bottom: 1.95rem;
   }
 
 /******************************************************************************/
+
+  /* upcoming show */
+  #upcomingshow{
+    padding-top: 100px;
+    text-align: center;
+  }
+  #upcomingshow h1{
+    margin-bottom: 40px;
+  }
+  .show_wrap{
+    width: 65%;
+    margin: 100px auto 150px;
+    /*padding: 0 15px;*/
+    text-align: left;
+    font-family: 'Comfortaa'
+  }
+  .show_title{
+    height: 44px;
+    line-height: 44px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .show_desc{
+    display: none;
+  }
+
+/******************************************************************************/
+
+  /* news_ */
+  .news_{
+    width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+/******************************************************************************/
+
+  /* icon_group */
+  #icon_group{
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+/******************************************************************************/
+
+  /* footer */
+  #footer{
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .footer_logo_box{
+    width: 150px; height: 94px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .footer_logo_box img{
+    width: 100%;
+  }
