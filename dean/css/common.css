@@ -1,0 +1,92 @@
+  *{
+    margin: 0; padding: 0;
+    outline: 1px #EAB4FD solid;
+  }
+  body{color: #FFF;}
+
+  ul{list-style:none;}
+
+  a{text-decoration: none;}
+
+  .yel{color: #fcbe46; text-align: center;}
+
+  .fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .btn{
+    background: #fcbe46;
+    /*height: 38px;*/
+    font-size: 10px;
+    width: 76px;
+    padding: 13px 30px;
+  }
+
+  .play_btn{
+    background-color: #303030;
+    color: #FFF;
+  }
+  .download_btn{
+    background-color: #fcbe46;
+  }
+
+  h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    font-family: 'Megrim';
+  }
+
+/******************************************************************************/
+
+  /*#container{
+    background-color: #000;
+  }*/
+  html{
+    background-color: #000;
+  }
+
+/******************************************************************************/
+
+  /* gnb */
+  .gnb_wrap{
+    height: 95px;
+    background-color: #000;
+    font-family: 'Comfortaa';
+    font-size: 13px;
+  }
+  #gnb{
+    /*width: 65%;*/
+    width: 1280px;
+    margin: 0 auto;
+  }
+  #gnb img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  #gnb ul{
+    float: right;
+    height: 60px;
+    text-transform: capitalize;
+    padding-right: 15px;
+    line-height: 95px;
+  }
+  #gnb li{
+    float: left;
+    margin-right: 40px;
+  }
+  #gnb li:nth-child(3){
+    text-transform: uppercase;
+  }
+  #gnb li:last-child{
+    margin-right: 0;
+    text-transform: lowercase;
+  }
+
+/******************************************************************************/

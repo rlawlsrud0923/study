@@ -5,26 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> http://officialdean.com/ </title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="script.js" charset="utf-8"></script>
+  <script src="js/fix.js" charset="utf-8"></script>
 </head>
 <body>
 
   <div id="container">
     <header></header>
 
+    <!-- gnb_wrap -->
     <section class="gnb_wrap" class="yel">
+
       <div id="gnb">
         <a href="http://officialdean.com/"><img src="img/logo_96x60.png" alt="official dean"></a>
 
-        <ul class="yel">
-          <li>biography</li>
-          <li>news</li>
-          <li>sns</li>
-          <li>upcoming shows</li>
-          <li>contact</li>
+        <ul>
+          <li><a href="#" class="yel">biography</a></li>
+          <li><a href="#news" class="yel">news</a></li>
+          <li><a href="#sns" class="yel">sns</a></li>
+          <li><a href="#upcomingshows" class="yel">upcoming shows</a></li>
+          <li><a href="#" class="yel">contact</a></li>
         </ul>
       </div>
     </section><!-- /gnb_wrap -->
@@ -134,7 +137,7 @@
           <div class="news_box">
             <dl>
               <dt><img src="img/album_3.jpg" alt="Foreign ~ k o r e a n ~"></dt>
-              <dt class="yel">Foreign &sim; k o r e a n &sim;</dt>
+              <dd class="yel">Foreign &sim; k o r e a n &sim;</dd>
             </dl>
               <p>Available on iTunes</p>
 
@@ -207,7 +210,7 @@
 <!-- ======================================================================= -->
 
       <!-- upcoming show -->
-      <section id="upcomingshow">
+      <section id="upcomingshows">
         <h1 class="yel">upcoming shows</h1>
 
         <div class="show_wrap">
@@ -737,5 +740,6 @@
 <!-- ======================================================================= -->
 
   </div><!-- /container -->
+
 </body>
 </html>

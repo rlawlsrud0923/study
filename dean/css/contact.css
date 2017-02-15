@@ -1,0 +1,74 @@
+
+  html{
+    background: url(../img/contact_bg.jpg);
+  }
+
+/******************************************************************************/
+
+  /* contact */
+  #contact{
+    width: 1290px;
+    margin: 0 auto;
+    padding: 250px 15px 0 15px;
+  }
+
+  /* name email */
+  .namemail{
+    width: 100%;
+    height: 60px;
+  }
+  input[type="text"]{
+    width: 630px;
+    box-sizing: border-box;
+    float: left;
+    padding: 17px 20px;
+    margin: 0 0 10px;
+    border: 0;
+    font-size: 12px;
+    background: #fafafa;
+  }
+  input[type="text"]:first-child{
+    margin-right: 15px;
+  }
+  input[type="text"]:last-child{
+    margin-left: 15px;
+  }
+
+  /* textarea */
+  textarea{
+    height: 183px;
+    padding: 17px 0 0 17px;;
+    width: calc(100% - 17px);
+    background: #fafafa;
+    overflow: auto;
+    border: 0
+  }
+
+  /* submit */
+  .submit{
+    text-align: center;
+  }
+  input[type="submit"]{
+    background: #fcbe46;
+    font-size: 12px;
+    padding: 17px 30px;
+    margin-top: 30px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 1px solid #fcbe46;
+    line-height: 1;
+  }
+
+  input[type=submit]:hover {
+    color: #fff;
+  }
+
+/******************************************************************************/
+
+  /* icon_group */
+  #icon_group{
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+/******************************************************************************/
