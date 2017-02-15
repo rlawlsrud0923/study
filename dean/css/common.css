@@ -59,6 +59,7 @@
     background-color: #000;
     font-family: 'Comfortaa';
     font-size: 13px;
+    z-index: 101;
   }
   #gnb{
     /*width: 65%;*/
@@ -88,5 +89,13 @@
     margin-right: 0;
     text-transform: lowercase;
   }
+  
+  /*#gnb li a:before{
+    color: #2ba6cb;
+  }
+  #gnb li a:after{
+    /*color: #2ba6cb;*/
+    color: #a08f68;
+  }*/
 
 /******************************************************************************/
