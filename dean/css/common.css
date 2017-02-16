@@ -98,18 +98,18 @@
       color: #fcbe46;
   }
 
-  /*#gnb a{
+  #gnb a{
     color: #fcbe46;
     outline: 0;
-    -webkit-tap-highlight-color: transparent;*/
-    /*color: transparent;*/
-  /*}*/
+    /*-webkit-tap-highlight-color: transparent;*/
+  }
+  #gnb a:hover{
+    color: #5a5a5a;
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 
 
 /******************************************************************************/
-
-
-a:hover{
-  -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
