@@ -105,11 +105,35 @@
   }
   #gnb a:hover{
     color: #5a5a5a;
-    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
   }
 
-
 /******************************************************************************/
+
+  /* transition */
+  a:hover,.show_title,#gnb{
+    -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .btn_hover:hover,.download_hover:hover{
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+
+  #itunes li:hover,#purchase_album li:hover{
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+
+
+    -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }

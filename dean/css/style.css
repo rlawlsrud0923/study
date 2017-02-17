@@ -48,18 +48,19 @@
     margin-left: 40%;
     margin-bottom: 20px;
   }
-  #itunes li{
+  #itunes li,#purchase_album li{
     float: left;
+    outline: 1px solid #fcbe46;
+  }
+  #itunes li:hover,#purchase_album li:hover{
+    background: #000;
   }
 
-  /* purchase_album btn*/
+  /* purchase_album btn */
   #purchase_album{
     height: 38px;
     margin-left: 22%;
     margin-bottom: 30px;
-  }
-  #purchase_album li{
-    float: left;
   }
 
 /******************************************************************************/
@@ -180,20 +181,13 @@
   	color: #FFF;
   }
 
-  .download_hover {
+  .download_hover{
 	  background-color: #fcbe46;
     color: #FFF;
   }
   .download_hover:hover {
   	background-color: #2f79c2;
     color: #FFF;
-  }
-  .btn_hover:hover,.download_hover:hover{
-    -webkit-transition: all 500ms ease-out;
-  	-moz-transition: all 500ms ease-out;
-  	-ms-transition: all 500ms ease-out;
-  	-o-transition: all 500ms ease-out;
-  	transition: all 500ms ease-out;
   }
 
 /******************************************************************************/
@@ -284,9 +278,9 @@
     margin-bottom: 40px;
   }
   .show_wrap{
-    width: 65%;
+    width: 66.66667%;
     margin: 100px auto 150px;
-    /*padding: 0 15px;*/
+    padding-left: 0.9375em; padding-right: 0.9375em;
     text-align: left;
     font-family: 'Comfortaa'
   }
@@ -325,7 +319,6 @@
     list-style-type: circle;
     list-style-position: inside;
     padding: 10px 0 0 15px;
-    width: 89.5%;
   }
   .show_desc hr{
     height: 0;
