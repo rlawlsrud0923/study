@@ -1,8 +1,13 @@
   *{
     margin: 0; padding: 0;
-    outline: 1px #95F9EF solid;
+    /*outline: 1px #95F9EF solid;*/
   }
+
   body{color: #FFF;}
+
+  html{
+    background-color: #000;
+  }
 
   ul{list-style:none;}
 
@@ -44,12 +49,7 @@
 
 /******************************************************************************/
 
-  /*#container{
-    background-color: #000;
-  }*/
-  html{
-    background-color: #000;
-  }
+
 
 /******************************************************************************/
 

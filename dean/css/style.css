@@ -299,8 +299,39 @@
     margin-bottom: 6px;
     border-bottom: 1px solid rgba(228, 228, 228, 0.2);
   }
+
+
+  /* show_desc */
   .show_desc{
     display: none;
+    font-size: 14px;
+    font-family: Abel;
+  }
+  .show_desc dl,dt,dd{
+    margin-bottom: 0.65rem;
+  }
+  .show_desc dt:first-child,.show_desc:last-child dt:nth-child(2){
+    font-weight: bold;
+  }
+
+  .show_desc ul{
+    margin-bottom: 37px;
+  }
+  .margin_x{
+    margin-bottom: 0;
+  }
+
+  .show_desc li{
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 10px 0 0 15px;
+    width: 89.5%;
+  }
+  .show_desc hr{
+    height: 0;
+    margin-top: 1.25rem;
+    border: solid #ddd;
+    border-width: 1px 0 0;
   }
 
 /******************************************************************************/
