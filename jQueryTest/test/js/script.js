@@ -51,7 +51,7 @@ var slide = {
 
 
 
-/*문법1
+/*방법1
 
 // //콜백
 // sum(function(){ return 1})
@@ -92,7 +92,7 @@ $(function(){
 */
 
 
-/*문법2
+/*방법2
 
 $(function(){
 
@@ -116,7 +116,7 @@ $(function(){
 })
 */
 
-//문법3
+//방법3
 //A.Hover Menu
 var navEvent ={ // mouseEvent fuction
     mouse:function(){

@@ -23,7 +23,6 @@
   /* purchase */
   #purchase{
     text-align: center;
-    font-family: Montserrat;
     padding-top: 250px;
   }
   #purchase li:hover,#purchase li:hover a{
@@ -229,6 +228,11 @@
     padding: 0 15px;
     text-align: center;
   }
+  #twitter_box a{
+    color: #fcbe46;
+  }
+
+  /* aside */
   #twitter_box aside{
     margin-top: 30px;
     text-align: left;
@@ -236,20 +240,20 @@
     line-height: 18px;
     color: #FFF;
   }
-  #twitter_box a{
-    color: #fcbe46;
+  #twitter_box aside a{
+    /*margin-top: 10px;*/
+    /*display: block;*/
+    font-weight: 600;
+    font-size: 12px;
   }
+
+  /* twitter_txt */
   .twitter_txt{
     width: 495px;
     height: 36px;
-    /*overflow: visible;*/
     overflow: hidden;
-  }
-  #twitter_box aside a:last-child{
-    margin-top: 10px;
     display: block;
-    font-weight: 600;
-    font-size: 12px;
+    margin-bottom: 10px;
   }
 
 
