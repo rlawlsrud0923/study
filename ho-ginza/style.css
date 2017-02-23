@@ -34,9 +34,16 @@ a{text-decoration: none;}
   bottom: 0;
 }
 
+.lnb_list,.lnb_area,.o{
+  transition-property: all;
+  transition-duration: 1s;
+}
+.lnb_list a:hover + .o{ -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); }
+
 /* intro ********************************************************************/
   .intro{
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     min-height: 706px;
     max-width: 1920px;
     min-width: 1160px;
@@ -45,7 +52,6 @@ a{text-decoration: none;}
     background: url("img/navy_bg.png");
     background-repeat: repeat;
     background-size: 220px 220px;
-    display: block;
     opacity: 1.0;
   }
   .intro .logo{
@@ -117,6 +123,7 @@ a{text-decoration: none;}
     position: absolute;
     top: 602px;
     left: 52.671875%;
+    cursor: pointer;
   }
 
 
@@ -132,7 +139,7 @@ a{text-decoration: none;}
     height: 58px;
     margin: 0 auto;
     padding: 21px 0;
-            margin-bottom: 60px;
+    margin-bottom: 60px;
   }
   .lnb .l{
     height: 40px;
@@ -140,9 +147,11 @@ a{text-decoration: none;}
     float: left;
   }
 
+  /*lnb_logo*/
   #lnb_logo{
     display: inline;
     float: left;
+    cursor: pointer;
   }
   #lnb_logo img{
     height: 58px;
@@ -154,12 +163,15 @@ a{text-decoration: none;}
     border-radius: 50px;
     background-color: #000;
   }
+
+  /*lnb_list*/
   .lnb_list{
     display: inline;
   }
   .lnb_list li{
     float: left;
     margin: 14.5px 10px 0 0;
+    cursor: pointer;
   }
   .lnb_list li:first-of-type{
     margin-left: 65px;
@@ -259,40 +271,40 @@ a{text-decoration: none;}
 
 /*  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
 
-  #partition_2{
+  .partition_2{
     height: 74px;
   }
 
 /*access *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
   #access{
     height: 438px;
-    background-color: #FFB005;
     margin-bottom: 120px;
   }
-  #access_txt{
+  .access_txt{
     width: 38.046875%;
     font-size: 12px;
     line-height: 1.8em;
     float: left;
+    color: #000;
   }
-  #access_txt h2{
+  .access_txt h2{
     /*float: left;*/
     /*position: relative;
     left: 50%;*/
     margin-left: 60%;
   }
 
-  #access_txt ul{
+  .access_txt ul{
     margin-top: 104px;
     margin-left: 28%;
   }
 
   /* map */
-  #map_area{
+  .map_area{
     overflow: hidden;
     height: 438px;
   }
-  #map_area img{height: 438px;}
+  .map_area img{height: 438px;}
 
 /*tel *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
   #tel{
@@ -311,15 +323,16 @@ a{text-decoration: none;}
   #footer{
     background: url("img/footer_bg.png");
     height: 330px;
+    color: #000;
   }
 
-  #footer_txt{
+  .footer_txt{
     width: 1000px;
     margin: 0 auto;
     padding-top: 100px;
     font-family: "游明朝体", "Yu Mincho", YuMincho, serif;
   }
-  #footer_txt h2{
+  .footer_txt h2{
     font-size: 14px;
     margin-bottom: 20px;
   }
