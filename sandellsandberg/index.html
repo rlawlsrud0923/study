@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="/css/font.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%7CDroid+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin&#038;ver=1475059808">
   <link rel="stylesheet" href="http://www.sandellsandberg.se/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=4.12">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
   <script src="js/btn.js" charset="utf-8"></script>
@@ -23,11 +25,11 @@
 
     <!-- menu -->
     <ul>
-      <li>Om oss</li>
-      <li>Aktuellt</li>
-      <li>Projekt</li>
-      <li>Jobb</li>
-      <li>Kontakt</li>
+      <li><a href="#">Om oss</a></li>
+      <li><a href="#">Aktuellt</a></li>
+      <li><a href="#">Projekt</a></li>
+      <li><a href="#">Jobb</a></li>
+      <li><a href="#">Kontakt</a></li>
     </ul>
     <!-- /menu -->
 
@@ -67,8 +69,8 @@
         </li>
       </ul>
 
-      <button class="prev">이전</button>
-      <button class="next">다음</button>
+      <button class="prev"><i class="vc_tta-icon fa fa-chevron-left"></i></button>
+      <button class="next"><i class="vc_tta-icon fa fa-chevron-right"></i></button>
     </div>
     <!-- /banner -->
 
@@ -91,45 +93,52 @@
     </div>
     <!-- /om -->
 
+
+
+
+    <!-- aktuellt -->
     <div id="aktuellt">
+
       <div class="row">
-        <h1><span style="color: #ffffff;">Aktuellt</span></h1>
 
         <div class="aktuellt_wrap" id="wp-posts-carousel-1376233469">
-          <ul>
-            <li><img src="img/aktuellt_1.jpg" alt=""></li>
-            <li><h3>Vinst i Kalmar</h3></li>
-            <li>Sandellsandberg och Riksbyggen har utsetts till vinnare i en markanvisningstävling för att transformera Fredriksskans idrottsplats. Tävlingsförslaget ”Fredriksskans 365” innehåller både hyresrätter och bostadsrätter, totalt ca 125 lägenheter.</li>
-          </ul>
 
-          <ul>
-            <li><img src="img/aktuellt_2.jpg" alt=""></li>
-            <li><h3>IKEA PS 2017 - Sidobord med hjul</h3></li>
-            <li>&quot;Jag älskar att skapa nya produkter på fabriksgolvet. Att faktiskt kunna röra vid materialet och förstå produktionen gör hela jobbet så mycket roligare. IKEA PS 2017 sidobord med hjul är resultatet av en sådan resa. Ett flyttbart soffbord som kan användas på många olika ställen.&quot; — Thomas Sandell.</li>
-          </ul>
+          <h1><span style="color:#FFF;">Aktuellt</span></h1>
 
-          <ul>
-            <li><img src="img/aktuellt_3.jpg" alt=""></li>
-            <li><h3>Vill du rita morgondagens skola?</h3></li>
-            <li>Just nu söker vi arkitekter med tidigare erfarenhet från utveckling av skolor till några av våra mest spännande projekt. Vi behöver även förstärka oss på fler områden då våra uppdrag växer i komplexitet men också i antal. Är du en erfaren arkitekt som vill utveckla din karriär på ett kreativt ställe finns en eller flera stolar lediga!</li>
-          </ul>
-
-          <div class="more">
-            <sapn>Visa äldre</sapn>
-            <i class="vc_tta-icon fa fa-chevron-right"></i>
+          <div class="desc">
+            <img src="img/aktuellt_1.jpg" alt="">
+            <h3>Vinst i Kalmar</h3>
+            <p>Sandellsandberg och Riksbyggen har utsetts till vinnare i en markanvisningstävling för att transformera Fredriksskans idrottsplats. Tävlingsförslaget ”Fredriksskans 365” innehåller både hyresrätter och bostadsrätter, totalt ca 125 lägenheter.</p>
+            <a href="http://www.sandellsandberg.se/content/fredriksskans-365/">Läs mer.</a>
+          </div>
+          <div class="desc">
+            <img src="img/aktuellt_2.jpg" alt="">
+            <h3>IKEA PS 2017 - Sidobord med hjul</h3>
+            <p>&quot;Jag älskar att skapa nya produkter på fabriksgolvet. Att faktiskt kunna röra vid materialet och förstå produktionen gör hela jobbet så mycket roligare. IKEA PS 2017 sidobord med hjul är resultatet av en sådan resa. Ett flyttbart soffbord som kan användas på många olika ställen.&quot; — Thomas Sandell.</p>
+          </div>
+          <div class="desc">
+            <img src="img/aktuellt_3.jpg" alt="">
+            <h3>Vill du rita morgondagens skola?</h3>
+            <p>Just nu söker vi arkitekter med tidigare erfarenhet från utveckling av skolor till några av våra mest spännande projekt. Vi behöver även förstärka oss på fler områden då våra uppdrag växer i komplexitet men också i antal. Är du en erfaren arkitekt som vill utveckla din karriär på ett kreativt ställe finns en eller flera stolar lediga!</p>
           </div>
 
         </div>
+        <!-- /aktuellt_wrap -->
+
+        <div class="more"><span>Visa äldre<i class="vc_tta-icon fa fa-chevron-right"></i></span></div>
+
       </div>
+      <!-- /row -->
 
     </div>
+    <!-- aktuellt -->
 
-    <div id="projekt" class="row">
+    <div id="projekt" class="row desc">
       <h1>Projekt</h1>
       <p>En stark idé utgör alltid utgångspunkten för vår projektprocess. För att behålla vår personlighet, lekfullhet, kreativitet och särprägel jobbar vi brett med ett öppet synsätt.<br />
       Därför utvecklar vi idag allt från produkter till städer.</p>
 
-      <div class="button_group">
+      <div class="btn_group">
         <button type="button">Alla</button>
         <button type="button">Bostäder</button>
         <button type="button">Inredning</button>
@@ -138,6 +147,34 @@
         <button type="button">Produktdesign</button>
         <button type="button">Stadsutveckling</button>
       </div>
+
+      <article>
+        <div class="projekt_article">
+          <img src="img/projekt_1.jpg" alt="">
+          <a href="http://www.sandellsandberg.se/content/fredriksskans-365/" class="_self cvplbd" target="_self" >Fredriksskans 365</a>
+
+          <img src="img/projekt_2.jpg" alt="">
+          <img src="img/projekt_3.jpg" alt="">
+          <img src="img/projekt_4.jpg" alt="">
+          <img src="img/projekt_5.jpg" alt="">
+          <img src="img/projekt_6.jpg" alt="">
+          <img src="img/projekt_7.jpg" alt="">
+          <img src="img/projekt_8.jpg" alt="">
+          <img src="img/projekt_9.jpg" alt="">
+          <img src="img/projekt_10.jpg" alt="">
+          <img src="img/projekt_11.jpg" alt="">
+          <img src="img/projekt_12.jpg" alt="">
+          <img src="img/projekt_13.jpg" alt="">
+          <img src="img/projekt_14.jpg" alt="">
+          <img src="img/projekt_15.jpg" alt="">
+          <img src="img/projekt_16.jpg" alt="">
+          <img src="img/projekt_17.jpg" alt="">
+          <img src="img/projekt_18.jpg" alt="">
+          <img src="img/projekt_19.jpg" alt="">
+          <img src="img/projekt_20.jpg" alt="">
+        </div>
+
+      </article>
     </div>
 
   </div>

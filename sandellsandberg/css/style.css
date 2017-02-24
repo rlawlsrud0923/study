@@ -1,7 +1,6 @@
 *{
   margin: 0; padding: 0;
   list-style: none;
-  text-decoration: none;
   outline: 1px #FF3369 solid;
 }
 body{
@@ -20,7 +19,10 @@ h1{
   line-height: 50px;
   color: #000;
 }
-a{color: #000;}
+a{color: #000; text-decoration: none;}
+a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
+.desc p{line-height: 24.99px; font-size: 14px;}
+
 
 
   /*gnb*/
@@ -46,7 +48,7 @@ a{color: #000;}
     height: 86px;
     line-height: 86px;
     margin-left: 20px;
-
+    cursor: pointer;
     font-size: 18px;
     font-style: normal;
     font-family: "SaBo";
@@ -93,8 +95,30 @@ a{color: #000;}
   }
   /*.fadebanner li.on a{background: rgba(252,237,35,0.9);}*/
   .fadebanner button{position: absolute; top: 0; cursor: pointer}
-  .fadebanner button.next{right: 0; top: 50%;}
-  .fadebanner button.prev{left: 0; top: 50%;}
+  .fadebanner button.prev{
+    left: 0; top: 50%;
+    transform: matrix(1, 0, 0, 1, 30, -20);
+    padding-right: 4px;
+  }
+  .fadebanner button.next{
+    right: 0; top: 50%;
+    transform: matrix(1, 0, 0, 1, -70, -20);
+    padding-left: 4px;
+  }
+  .fadebanner button{
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 0;
+    background: rgba(0,0,0,0.7);
+    color: #FFF;
+    display: none;
+  }
+  .fadebanner button:hover,.fadebanner li a:hover{
+    background-color: rgba(252,237,35,0.9);
+    color: rgba(0,0,0,0.7);
+  }
+
 
 
   /*Om oss*/
@@ -121,33 +145,29 @@ a{color: #000;}
     background-color: #000;
     padding-top: 30px;
     padding-bottom: 60px;
-    height: 710px;
   }
-  .aktuellt_wrap{
-    color: #FFF;
-  }
-  .aktuellt_wrap h1{
-    padding-bottom: 30px;
-  }
-  .aktuellt_wrap ul{
-    width: 390px;
-    margin-right: 5px;
-    height: 584px;
+  #aktuellt .row{color:#FFF;}
+  .aktuellt_wrap{ padding: 10px; height: 718px;}
+  .aktuellt_wrap h1{padding: 30px 0;}
+  .aktuellt_wrap a{ color: #FFF;}
+  .aktuellt_wrap a{text-decoration: underline; font-size: 14px;}
+  .aktuellt_wrap .desc{
+    width: 382px; height: 584px;
+    padding: 5px;
+    float: left;
     overflow: hidden;
-    float: left;
   }
-  .aktuellt_wrap li{
-    float: left;
-  }
-  .aktuellt_wrap li img{
-    width: 100%;
-  }
-  .more{
+  .aktuellt_wrap .desc h3{padding-top: 15px;font-size:20px;}
+  .aktuellt_wrap .desc img{width: 100%;}
+  .aktuellt_wrap .desc p{font-size: 14px;}
+  .aktuellt_wrap+.more{
     text-align: center;
     font-family: sabo;
     font-size: 18px;
+    height: 80px;
   }
-
+  .aktuellt_wrap+.more>span:hover{opacity: 0.7;}
+  .aktuellt_wrap+.more>span>i{padding-left: 5px;}
 
   /*projekt*/
   #projekt{
@@ -156,3 +176,27 @@ a{color: #000;}
   #projekt h1{
     padding-bottom: 30px;
   }
+  #projekt .btn_group{margin: 10px 0 20px 0;}
+  #projekt .btn_group button{
+    height: 45px;
+    background-color: #000;
+    color: #FFF;
+    border: #FFF;
+    padding: 6px 12px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.42857143;
+    margin-bottom: 20px;
+  }
+  #projekt .btn_group button:nth-child(n+2):hover{
+    opacity: 0.8;
+  }
+
+  #projekt article{
+    overflow: hidden;
+    height: 920px;
+    transition: height 250ms ease-out;
+  }
+  .projekt_article{}
+  .projekt_article img{width: 25%;}
+  .projekt_article a{display: none;}

@@ -46,7 +46,7 @@ $(function(){
 
 	//슬라이드 베너
 	var st = $('.slidebanner li');
-	var stIdx = Math.floor(Math.random()*st.length);
+	var stIdx = Math.floor(Math.random()*st.length); //Math.floor:정수로 만들어줌
 	var hisnum = null;
 	var stimg = null;
 
