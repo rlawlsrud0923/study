@@ -18,10 +18,30 @@ h1{
   font-family: "SaBo";
   line-height: 50px;
   color: #000;
+  padding: 30px 0px;
 }
 a{color: #000; text-decoration: none;}
 a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
-.desc p{line-height: 24.99px; font-size: 14px;}
+
+.desc{width: 50%;}
+
+.btn_group{margin: 10px 0 20px 0;}
+.btn_group button{
+  height: 45px;
+  border: #FFF;
+  padding: 6px 12px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.42857143;
+  margin-bottom: 20px;
+}
+#job .btngroup button{
+   background-color: #0c0c0c;
+}
+#job .btngroup button:hover{
+  color: #000;
+  background: #dbdbdb;
+}
 
 
 
@@ -127,7 +147,6 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     margin-bottom: 60px;
   }
   .om_txt{
-    margin-top: 40px;
     width: 75%;
   }
   .om_txt h1{
@@ -147,8 +166,7 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     padding-bottom: 60px;
   }
   #aktuellt .row{color:#FFF;}
-  .aktuellt_wrap{ padding: 10px; height: 718px;}
-  .aktuellt_wrap h1{padding: 30px 0;}
+  .aktuellt_wrap{ padding: 0 10px 10px 10px; height: 718px;}
   .aktuellt_wrap a{ color: #FFF;}
   .aktuellt_wrap a{text-decoration: underline; font-size: 14px;}
   .aktuellt_wrap .desc{
@@ -169,16 +187,16 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   .aktuellt_wrap+.more>span:hover{opacity: 0.7;}
   .aktuellt_wrap+.more>span>i{padding-left: 5px;}
 
+
+
   /*projekt*/
   #projekt{
-    margin-top: 60px;
+    margin-top: 30px;
+    padding-bottom: 60px;
   }
-  #projekt h1{
-    padding-bottom: 30px;
-  }
+  #projekt p{line-height: 24.99px; font-size: 14px;}
   #projekt .btn_group{margin: 10px 0 20px 0;}
   #projekt .btn_group button{
-    height: 45px;
     background-color: #000;
     color: #FFF;
     border: #FFF;
@@ -188,15 +206,60 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     line-height: 1.42857143;
     margin-bottom: 20px;
   }
+  #projekt .btn_group button:first-child{background: #dbdbdb;color:#000;}
   #projekt .btn_group button:nth-child(n+2):hover{
     opacity: 0.8;
   }
 
+  /*projekt_article*/
   #projekt article{
     overflow: hidden;
     height: 920px;
     transition: height 250ms ease-out;
   }
-  .projekt_article{}
-  .projekt_article img{width: 25%;}
+  .projekt_article img{width: 25%; float:left;}
   .projekt_article a{display: none;}
+
+  #projekt div:last-child{width: 100%; text-align: center;}
+  #projekt button{
+    background: #FFF;
+    border: 0px;
+    font-size: 18px;
+    height: 45px;
+  }
+  .caret{
+    width: 0; height: 0;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+  }
+
+
+
+  /*job*/
+  #job{
+    background: url("../img/job.jpg");
+    padding-bottom: 60px;
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+  }
+  #job .row p{padding-bottom: 14px;}
+  #job .row i{margin-left: 14px;}
+
+
+
+  /*Kontakt*/
+  #kontakt{padding-top: 60px;}
+  #kontakt button{font-size: 14px;}
+  #kontakt button:first-child{background: #dbdbdb; color:#000;}
+  #kontakt button{background: #0c0c0c; color:#FFF;}
+  #kontakt button:hover{background: #dbdbdb; color:#000;}
+
+  #kontakt .desc{padding-top: 20px; padding-bottom: 50px;}
+  #kontakt h4, #kontakt h5{font-size: 18px; margin-bottom: 14px;}
+  #kontakt .txt{float: left;}
+  #kontakt .map{width: 50%; padding: 20px 74px 50px 10px;}
