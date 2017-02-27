@@ -21,7 +21,7 @@ h1{
   padding: 30px 0px;
 }
 a{color: #000; text-decoration: none;}
-a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
+a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
 
 .desc{width: 50%;}
 
@@ -35,12 +35,15 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   line-height: 1.42857143;
   margin-bottom: 20px;
 }
-#job .btngroup button{
-   background-color: #0c0c0c;
-}
-#job .btngroup button:hover{
-  color: #000;
-  background: #dbdbdb;
+
+.caret{
+  width: 0; height: 0;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
 }
 
 
@@ -50,7 +53,7 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     background-color: #fced23;
     padding: 20px;
   }
-  .logo{
+  .gnb>a{
     margin-top: 10px;
     margin-left: 68px;
     height: 63px;
@@ -66,18 +69,16 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   .gnb li{
     float: left;
     height: 86px;
-    line-height: 86px;
+    line-height: 66px;
     margin-left: 20px;
-    cursor: pointer;
     font-size: 18px;
-    font-style: normal;
-    font-family: "SaBo";
-    font-weight: 400;
     overflow: hidden;
   }
 
 
-  /*ebanner*/
+
+
+  /*fadebanner*/
   .fadebanner{
     width: 100%;
     /*height: 600px;*/
@@ -98,23 +99,19 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     position: absolute;
     left: 0;
     top: 0;
-    /*display: none;*/
   }
   .fadebanner li a{
     font-size: 0;
     width: 12px;
     height: 12px;
-    background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    cursor: pointer;
     top: 550px;
     z-index: 1;
     display: block;
     margin: 0 2px 0 1px;
   }
-  /*.fadebanner li.on a{background: rgba(252,237,35,0.9);}*/
-  .fadebanner button{position: absolute; top: 0; cursor: pointer}
+  .fadebanner button{position: absolute; top: 0;}
   .fadebanner button.prev{
     left: 0; top: 50%;
     transform: matrix(1, 0, 0, 1, 30, -20);
@@ -130,13 +127,7 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     border-radius: 50%;
     font-size: 20px;
     border: 0;
-    background: rgba(0,0,0,0.7);
-    color: #FFF;
     display: none;
-  }
-  .fadebanner button:hover,.fadebanner li a:hover{
-    background-color: rgba(252,237,35,0.9);
-    color: rgba(0,0,0,0.7);
   }
 
 
@@ -149,9 +140,6 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   .om_txt{
     width: 75%;
   }
-  .om_txt h1{
-    line-height: 50px;
-  }
   .om_txt h1, .om_txt p{
     margin-bottom: 14px;
   }
@@ -160,6 +148,9 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   }
 
 
+
+
+  /*aktuellt*/
   #aktuellt{
     background-color: #000;
     padding-top: 30px;
@@ -196,9 +187,13 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   }
   #projekt p{line-height: 24.99px; font-size: 14px;}
   #projekt .btn_group{margin: 10px 0 20px 0;}
-  #projekt .btn_group button{
-    background-color: #000;
-    color: #FFF;
+  #projekt .btn_group button{ background-color: #000; color: #FFF;}
+
+  #projekt button{
+    background: #FFF;
+    border: 0px;
+    font-size: 14px;
+    height: 45px;
     border: #FFF;
     padding: 6px 12px;
     display: inline-block;
@@ -206,13 +201,14 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     line-height: 1.42857143;
     margin-bottom: 20px;
   }
-  #projekt .btn_group button:first-child{background: #dbdbdb;color:#000;}
-  #projekt .btn_group button:nth-child(n+2):hover{
-    opacity: 0.8;
-  }
+  #projekt .btn_group button:first-child{background: #dbdbdb; color:#000;}
+  #projekt .btn_group button:nth-child(n+2):hover{opacity: 0.8;}
+  #projekt div:last-child{width: 100%; text-align: center;}
+
+
 
   /*projekt_article*/
-  #projekt article{
+  .projekt_article{
     overflow: hidden;
     height: 920px;
     transition: height 250ms ease-out;
@@ -220,53 +216,44 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
   .projekt_article img{width: 25%; float:left;}
   .projekt_article a{display: none;}
 
-  #projekt div:last-child{width: 100%; text-align: center;}
-  #projekt button{
-    background: #FFF;
-    border: 0px;
-    font-size: 18px;
-    height: 45px;
-  }
-  .caret{
-    width: 0; height: 0;
-    border-top: 4px dashed;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 2px;
-  }
-
 
 
   /*job*/
   #job{
-    background: url("../img/job.jpg");
+    background: url("../img/job.jpg") center;
+    padding-top: 30px;
     padding-bottom: 60px;
-    background-position: center;
     background-size: cover;
-    min-height: 600px;
   }
+  #job .row{min-height: 600px;}
   #job .row p{padding-bottom: 14px;}
   #job .row i{margin-left: 14px;}
+
+  #job .btngroup button{
+     background-color: #0c0c0c;
+  }
+  #job .btngroup button:hover{
+    color: #000;
+    background: #dbdbdb;
+  }
 
 
 
   /*Kontakt*/
   #kontakt{padding-top: 60px;}
   #kontakt button{font-size: 14px;}
-  #kontakt button:first-child{background: #dbdbdb; color:#000;}
-  #kontakt button{background: #0c0c0c; color:#FFF;}
-  #kontakt button:hover{background: #dbdbdb; color:#000;}
 
-  #kontakt .desc{padding-top: 20px; padding-bottom: 50px;}
-  /*#kontakt .desc:first-child{float: left;}
-  #kontakt .desc:last-child{float: left;}*/
-  #kontakt h4, #kontakt h5{font-size: 18px; margin-bottom: 14px;}
-  #kontakt .txt{width: 100%;}
-  #kontakt .map{width: 50%; padding: 20px 74px 50px 10px;}
-
-  .map{ height: 330px; background-color: #00F;}
+  #kontakt .desc:first-child{float: left;}
+  #kontakt h4, #kontakt h5{
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  #kontakt .map{
+    padding: 20px 74px 50px 10px;
+    height: 330px;
+    background-color: #00F;
+    margin-left: 600px;
+  }
 
 
 
@@ -285,4 +272,3 @@ a,button,.vc_tta-icon,div.more>span{cursor: pointer;}
     font-size: 12px;
     margin: 15px 0;
   }
-  .foot-logo{}
