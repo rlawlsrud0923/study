@@ -20,6 +20,14 @@ h1{
   color: #000;
   padding: 30px 0px;
 }
+h4{color: #000;}
+h5{
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "SaFu";
+    line-height: 23px;
+    color: #000;
+}
 a{color: #000; text-decoration: none;}
 a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
 
@@ -210,11 +218,15 @@ a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
   /*projekt_article*/
   .projekt_article{
     overflow: hidden;
-    height: 920px;
+    /*height: 920px;*/
     transition: height 250ms ease-out;
   }
-  .projekt_article img{width: 25%; float:left;}
-  .projekt_article a{display: none;}
+  .projekt_article li{width: 25%; float:left;}
+  .projekt_article img{width: 100%;}
+  .projekt_article h4{font-size: 14px;transform: translateY(-50%);}
+  .projekt_article{background: #1b1b1b; color: #fff;}
+
+
 
 
 
@@ -251,7 +263,7 @@ a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
   #kontakt .map{
     padding: 20px 74px 50px 10px;
     height: 330px;
-    background-color: #00F;
+    /*background-color: #00F;*/
     margin-left: 600px;
   }
 

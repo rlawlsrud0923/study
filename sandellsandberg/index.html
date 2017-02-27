@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="http://www.sandellsandberg.se/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=4.12">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/script.js" charset="utf-8"></script>
 <script src="js/btn.js" charset="utf-8"></script>
+<script src="js/hover.js" charset="utf-8"></script>
 </head>
-<body>
+<body onload="initialize()">
 
   <!-- gnb -->
   <div class="gnb">
@@ -150,29 +152,30 @@
 
       <ul class="projekt_article">
         <li>
-          <img src="img/projekt_1.jpg" alt=""><a href="#" class="_self cvplbd" target="_self" ><h4>Fredriksskans 365</h4></a>
+          <a href="#" target="_self">
+            <img src="img/projekt_1.jpg" alt="">
+            <h4>Fredriksskans 365</h4>
+          </a>
         </li>
-        <li>
-          <img src="img/projekt_2.jpg" alt="">
-        </li>
-        <li><img src="img/projekt_3.jpg" alt=""></li>
-        <li><img src="img/projekt_4.jpg" alt=""></li>
-        <li><img src="img/projekt_5.jpg" alt=""></li>
-        <li><img src="img/projekt_6.jpg" alt=""></li>
-        <li><img src="img/projekt_7.jpg" alt=""></li>
-        <li><img src="img/projekt_8.jpg" alt=""></li>
-        <li><img src="img/projekt_9.jpg" alt=""></li>
-        <li><img src="img/projekt_10.jpg" alt=""></li>
-        <li><img src="img/projekt_11.jpg" alt=""></li>
-        <li><img src="img/projekt_12.jpg" alt=""></li>
-        <li><img src="img/projekt_13.jpg" alt=""></li>
-        <li><img src="img/projekt_14.jpg" alt=""></li>
-        <li><img src="img/projekt_15.jpg" alt=""></li>
-        <li><img src="img/projekt_16.jpg" alt=""></li>
-        <li><img src="img/projekt_17.jpg" alt=""></li>
-        <li><img src="img/projekt_18.jpg" alt=""></li>
-        <li><img src="img/projekt_19.jpg" alt=""></li>
-        <li><img src="img/projekt_20.jpg" alt=""></li>
+        <li><a href="#" target="_self"><img src="img/projekt_2.jpg" alt=""><h4>IKEA PS 2017 &#8211; Sidobord</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_3.jpg" alt=""><h4>Kollektivhuset 2.0, Wallenstam</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_4.jpg" alt=""><h4>Kvarteret Siv, Uppsala<</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_5.jpg" alt=""><h4>Rosendal, Småa</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_6.jpg" alt=""><h4>Barkarbystaden, Skanska</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_7.jpg" alt=""><h4>Skellefteå, Kulturhuset</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_8.jpg" alt=""><h4>Hallonbergen, Wallenstam</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_9.jpg" alt=""><h4>Kiruna, Skanska</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_10.jpg" alt=""><h4>Chester, Källemo</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_11.jpg" alt=""><h4>Vågö, IKEA</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_12.jpg" alt=""><h4>Granängsringen</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_13.jpg" alt=""><h4>Eriksberg Viltpark</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_14.jpg" alt=""><h4>Rindö Brygga</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_15.jpg" alt=""><h4>Kv Tenoren, Älvsjö</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_16.jpg" alt=""><h4>Sjöhuset, Kvarnholmen</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_17.jpg" alt=""><h4>Hatt, Zero</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_18.jpg" alt=""><h4>Lighthouse, Zero</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_19.jpg" alt=""><h4>Kv Broccolin</h4></a></li>
+        <li><a href="#" target="_self"><img src="img/projekt_20.jpg" alt=""><h4>Villa Vallmo, JB Villan</h4></a></li>
 
       </ul>
 
@@ -218,24 +221,71 @@
           <h5>Döbelnsgatan 54<br />
           113 52 Stockholm</h5>
           <h5>+46 (0) 8 506 531 00<br />
-          <span><a href="mailto:info@sandellsandberg.se">info@sandellsandberg.se</a></span><br />
-          <span> <a href="mailto:press@sandellsandberg.se">press@sandellsandberg.se</a></span></h5>
+            <span><a href="mailto:info@sandellsandberg.se">info@sandellsandberg.se</a></span><br />
+            <span> <a href="mailto:press@sandellsandberg.se">press@sandellsandberg.se</a></span>
+          </h5>
         </div>
 
-      <!-- map -->
-      <div class="map">
-        <script type="text/javascript">
+        <!-- map -->
+        <div class="map" id="map_view">
 
-        </script>
-      </div>
-      <!-- /map -->
+          <script>
+        		function initialize() {
+
+        			/*
+        				http://openapi.map.naver.com/api/geocode.php?key=f32441ebcd3cc9de474f8081df1e54e3&encoding=euc-kr&coord=LatLng&query=서울특별시 강남구 강남대로 456
+                        위의 링크에서 뒤에 주소를 적으면 x,y 값을 구할수 있습니다.
+        			*/
+        			var Y_point			= 59.346068;		// Y 좌표
+        			var X_point			= 18.058041;		// X 좌표
+
+        			var zoomLevel		= 16;						// 지도의 확대 레벨 : 숫자가 클수록 확대정도가 큼
+
+        			var markerTitle		= "sandellsandberg";				// 현재 위치 마커에 마우스를 오버을때 나타나는 정보
+        			var markerMaxWidth	= 300;						// 마커를 클릭했을때 나타나는 말풍선의 최대 크기
+
+        			// 말풍선 내용
+        			var contentString	= '<div>' +
+        			'<h2>sandellsandberg</h2>'+
+        			'<p>Döbelnsgatan 54, stockholm</p>' +
+        			//'<a href="http://www.daegu.go.kr" target="_blank">http://www.daegu.go.kr</a>'+ //링크도 넣을 수 있음
+        			'</div>';
+
+        			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+        			var mapOptions = {
+        								zoom: zoomLevel,
+        								center: myLatlng,
+        								mapTypeId: google.maps.MapTypeId.ROADMAP
+        			}
+        			var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+        			var marker = new google.maps.Marker({
+        													position: myLatlng,
+        													map: map,
+        													title: markerTitle
+        			});
+
+        			var infowindow = new google.maps.InfoWindow(
+        														{
+        															content: contentString,
+        															maxWidth: markerMaxWidth
+        														}
+        			);
+
+        			google.maps.event.addListener(marker, 'click', function() {
+        				infowindow.open(map, marker);
+        			});
+        		}
+        	</script>
+
+        </div>
+        <!-- /map -->
 
       </div>
       <!-- /row -->
 
     </div>
     <!-- /Kontakt -->
-
 
   </div>
   <!-- /content -->
