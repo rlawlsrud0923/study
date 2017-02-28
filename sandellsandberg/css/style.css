@@ -6,6 +6,13 @@
 body{
   color: #565656;
 }
+.fix{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 .row {
     width: 1200px;
     max-width: 100%;
@@ -13,6 +20,7 @@ body{
     margin: 0 auto;
     position: relative;
 }
+
 h1{
   font-size: 45px;
   font-family: "SaBo";
@@ -28,6 +36,7 @@ h5{
     line-height: 23px;
     color: #000;
 }
+
 a{color: #000; text-decoration: none;}
 a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
 
@@ -58,13 +67,15 @@ a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
 
   /*gnb*/
   .gnb{
+    width: 100%;
     background-color: #fced23;
     padding: 20px;
+    z-index: 999;
   }
-  .gnb>a{
+  .gnb > a{
     margin-top: 10px;
     margin-left: 68px;
-    height: 63px;
+    /*height: 63px;*/
   }
 
   /*gnb_list*/

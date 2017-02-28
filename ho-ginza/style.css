@@ -87,7 +87,6 @@ a{text-decoration: none;}
   .header{
     height: 850px;
     background: url("img/main_img.png") no-repeat;
-
     background-size: cover;
     margin-bottom: 48px;
   }
