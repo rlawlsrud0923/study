@@ -216,27 +216,28 @@ a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
 
 
   /*projekt_article*/
-  .projekt_article *{
+  .projekt_article{
+    background: #1b1b1b;
     overflow: hidden;
+  }
+  .projekt_article *{
     /*height: 920px;*/
-    transition: height 250ms ease-out;
-    /*background: #1b1b1b;*/
     color: #FFF;
   }
   .projekt_article li{
     width: 25%;
+    height: 187.5px;
     float:left;
-    display: block;
   }
   .projekt_article img{
     width: 100%;
   }
   .projekt_article h4{
     font-size: 14px;
-    transform: translateY(-500%);
+    opacity: 0;
+    transform: translateY(-600%);
     text-align: center;
   }
-
 
 
 
