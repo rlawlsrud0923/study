@@ -301,10 +301,9 @@ a{text-decoration: none;}
 
   /* map */
   .map_area{
-    overflow: hidden;
+    /*overflow: hidden;*/
     height: 438px;
   }
-  .map_area img{height: 438px;}
 
 /*tel *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
   #tel{

@@ -216,15 +216,26 @@ a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
 
 
   /*projekt_article*/
-  .projekt_article{
+  .projekt_article *{
     overflow: hidden;
     /*height: 920px;*/
     transition: height 250ms ease-out;
+    /*background: #1b1b1b;*/
+    color: #FFF;
   }
-  .projekt_article li{width: 25%; float:left;}
-  .projekt_article img{width: 100%;}
-  .projekt_article h4{font-size: 14px;transform: translateY(-50%);}
-  .projekt_article{background: #1b1b1b; color: #fff;}
+  .projekt_article li{
+    width: 25%;
+    float:left;
+    display: block;
+  }
+  .projekt_article img{
+    width: 100%;
+  }
+  .projekt_article h4{
+    font-size: 14px;
+    transform: translateY(-500%);
+    text-align: center;
+  }
 
 
 
@@ -263,7 +274,6 @@ a,button,.vc_tta-icon,div.more>span,i{cursor: pointer;}
   #kontakt .map{
     padding: 20px 74px 50px 10px;
     height: 330px;
-    /*background-color: #00F;*/
     margin-left: 600px;
   }
 
