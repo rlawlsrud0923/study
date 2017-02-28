@@ -15,7 +15,7 @@ $( document ).ready( function() { //준비되면 실행해
       $( '.gnb_panel').css("padding-top","0").height(58);
 
     }
-
++
 
     else { //그렇지 않을 경우
 
