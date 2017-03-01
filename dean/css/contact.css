@@ -61,6 +61,7 @@
 
   input[type=submit]:hover {
     color: #fff;
+    background-color: #000;
   }
 
 /******************************************************************************/
@@ -69,6 +70,9 @@
   #icon_group{
     padding-top: 100px;
     padding-bottom: 120px;
+  }
+  #icon_group a:hover{
+    color: #FFF;
   }
 
 /******************************************************************************/

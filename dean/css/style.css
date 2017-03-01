@@ -2,6 +2,7 @@
   /* header */
   header{
     background: url("../img/album_1901x950.jpg");
+    background-size: cover;
     background-position: center top;
     width: 100%;
     height: 950px;
@@ -43,7 +44,6 @@
   /* itunes streaming btn */
   #itunes{
     height: 38px;
-    text-transform: uppercase;
     margin-left: 40%;
     margin-bottom: 20px;
   }
@@ -93,6 +93,7 @@
     float: left;
     margin-bottom: 70px;
   }
+  .studio p:first-child{margin-bottom: 20px;}
   .studio:first-of-type{
     padding-right: 15px;
   }
@@ -254,7 +255,19 @@
     overflow: hidden;
     display: block;
     margin-bottom: 10px;
+    position: relative;
   }
+
+  .twitter_txt ul{
+    width: 495px;
+    height: 36px;
+    font-size: 0;
+  }
+  .twitter_txt ul li{
+    display: inline-block;
+    font-size: 12px;
+  }
+
 
 
   /* instagram */
@@ -286,7 +299,7 @@
     margin: 100px auto 150px;
     padding-left: 0.9375em; padding-right: 0.9375em;
     text-align: left;
-    font-family: 'Comfortaa'
+    /*font-family: 'Comfortaa'*/
   }
   .show_title{
     height: 44px;
@@ -358,6 +371,7 @@
   #icon_group{
     padding-top: 100px;
     padding-bottom: 70px;
+    text-align: center;
   }
 
 /******************************************************************************/
@@ -374,4 +388,20 @@
   }
   .footer_logo_box img{
     width: 100%;
+  }
+
+
+  #player{
+    bottom: -100px;
+    height: 170px;
+    background: rgb(252, 190, 70);
+    border-color: rgb(252, 190, 70);
+
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 100000;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
   }

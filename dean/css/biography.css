@@ -18,15 +18,18 @@
     margin-top: 70px;
     margin-bottom: 80px;
   }
+
   .biography_txt{
     font-size: 14px;
     font-family: 'Abel';
   }
   .biography_txt p{
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.65rem;
     color: #FFF;
+    line-height: 1.6;
   }
 
+  /* emblem */
   .emblem{
     text-align: center;
     margin-top: 50px;

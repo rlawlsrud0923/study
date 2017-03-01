@@ -1,5 +1,5 @@
 
-  /* Megrim *******************************************************************/
+/* Megrim *********************************************************************/
 
   @font-face {
     font-family: 'Megrim';
@@ -18,7 +18,7 @@
   }
 
 
-  /* Montserrat ***************************************************************/
+/* Montserrat *****************************************************************/
 
   /* vietnamese */
   @font-face {
@@ -47,4 +47,49 @@
 
   #purchase{
     font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+
+
+/* Comfortaa ******************************************************************/
+
+  /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+  @font-face {
+    font-family:"Comfortaa";
+    src:url("Comfortaa_Regular.eot?") format("eot"),
+    url("Comfortaa_Regular.woff") format("woff"),
+    url("Comfortaa_Regular.ttf") format("truetype"),
+    url("Comfortaa_Regular.svg#Comfortaa") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .show_wrap{
+    font-family: "Comfortaa";
+    font-size: 10px;
+    font-weight: 600;
+  }
+  #purchase ul{
+    font-family: 'Comfortaa';
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  .gnb_wrap{
+    font-family: 'Comfortaa';
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 95px;
+  }
+
+/* Abel ***********************************************************************/
+
+  @font-face {
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Abel'), local('Abel-Regular'), url(http://themes.googleusercontent.com/static/fonts/abel/v3/N59kklKPso9WzbZH9jwJSg.ttf) format('truetype');
   }

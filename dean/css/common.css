@@ -49,8 +49,6 @@
   .gnb_wrap{
     height: 95px;
     background-color: #000;
-    font-family: 'Comfortaa';
-    font-size: 13px;
     z-index: 101;
   }
   #gnb{
@@ -66,9 +64,7 @@
   #gnb ul{
     float: right;
     height: 60px;
-    text-transform: capitalize;
     padding-right: 15px;
-    line-height: 95px;
   }
   #gnb li{
     float: left;
@@ -117,12 +113,11 @@
     transition: all 500ms ease-out;
   }
 
-  #itunes li:hover,#purchase_album li:hover{
+  #itunes li:hover,#purchase_album li:hover,input[type=submit]:hover,#icon_group a:hover{
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-
 
     -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
