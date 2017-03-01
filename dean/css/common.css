@@ -143,6 +143,7 @@
     width: 960px;
     height: 100%;
     margin: 0 auto;
+    padding-top: 5px;
   }
 
   .x{
@@ -161,4 +162,16 @@
     cursor: pointer;
     font-size: 100%;
     text-align: center;
+  }
+  .left{
+    width: 70%;
+    float: left;
+    /*margin-top: 5px;*/
+    height: 60px;
+  }
+  .right{
+    float: right;
+    /*margin-top: 5px;*/
+    height: 70px;
+    width: 30%;
   }
