@@ -389,19 +389,3 @@
   .footer_logo_box img{
     width: 100%;
   }
-
-
-  #player{
-    bottom: -100px;
-    height: 170px;
-    background: rgb(252, 190, 70);
-    border-color: rgb(252, 190, 70);
-
-    width: 100%;
-    max-width: 100%;
-    position: fixed;
-    left: 0;
-    z-index: 100000;
-    font-size: 10px;
-    font-family: Helvetica, sans-serif;
-  }

@@ -1,6 +1,6 @@
   *{
     margin: 0; padding: 0;
-    /*outline: 1px #95F9EF solid;*/
+    outline: 1px #95F9EF solid;
   }
 
   body{color: #FFF;}
@@ -38,10 +38,6 @@
   .download_btn{
     background-color: #fcbe46;
   }
-
-/******************************************************************************/
-
-
 
 /******************************************************************************/
 
@@ -123,4 +119,46 @@
     -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+/******************************************************************************/
+
+
+
+  #player{
+    bottom: -100px;
+    height: 170px;
+    background: rgb(252, 190, 70);
+    border-color: rgb(252, 190, 70);
+
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 100000;
+    font-size: 10px;
+    font-family: Helvetica, sans-serif;
+  }
+  .player{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .x{
+    background: rgb(252, 190, 70);
+    border-top-color: rgb(252, 190, 70);
+    border-right-color: rgb(252, 190, 70);
+    border-bottom: none;
+    border-left-color: rgb(252, 190, 70);
+    top: -17px;
+
+    position: absolute;
+    height: 16px;
+    padding: 0 7px;
+    left: 0;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 100%;
+    text-align: center;
   }
