@@ -1108,26 +1108,40 @@
    모양 만들고 스크립트로 재생 정지 만들기
   -->
   <!-- player -->
-  <div id="player">
-    <div class="player">
-      <div class="plus">+</div>
+  <div id="player_wrap">
+
+    <div id="player">
+
+      <div id="plus">+</div>
+
+
 
       <div class="left">
-
-        <!-- <div class="fap-time-bar"></div> -->
-
+        <div id="fap-cover-wrapper">
+          <div id="fap-cover-replacement">
+            <span>...</span>
+          </div>
+        </div>
       </div>
+
+
 
       <div class="right">
 
-        <div class="player-control">
+        <div id="player-control">
           <a class="fa fa-backward"></a>
           <a class="fa fa-play"></a>
           <a class="fa fa-forward"></a>
 
           <div id="volume">
             <div class="fap-volume-bar"></div>
-            <div id="fap-volume-sign" class="fa fa-volume-up"></div>
+            <div class="fap-volume-sign fa fa-volume-up"></div>
+          </div>
+
+          <div id="fap-time-bar">
+            <div class="fap-loading-bar"></div>
+            <span id="fap-current-time">00:00:00</span>
+            <span id="fap-total-time">00:00:00</span>
           </div>
         </div>
 
@@ -1137,7 +1151,7 @@
           <a class="fa fa-list"></a>
         </div>
 
-        <div class="fap-loading-bar"></div>
+
         <!-- <audio controls>
         <source src="horse.mp3" type="audio/mpeg"></audio> -->
       </div>

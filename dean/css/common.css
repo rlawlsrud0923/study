@@ -125,7 +125,7 @@
 
 
 
-  #player{
+  #player_wrap{
     width: 100%;
     max-width: 100%;
     height: 170px;
@@ -138,9 +138,9 @@
     z-index: 10000;
     font-family: Helvetica, sans-serif;
   }
-  #player *{color: #000;}
+  #player_wrap *{color: #000;}
 
-  .player{
+  #player{
     width: 960px;
     height: 100%;
     margin: 0 auto;
@@ -149,7 +149,7 @@
     font-size: 14px;
   }
 
-  .plus{
+  #plus{
     background: rgb(252, 190, 70);
     border-top-color: rgb(252, 190, 70);
     border-right-color: rgb(252, 190, 70);
@@ -167,24 +167,44 @@
     padding: 1px 7px 0;
     text-align: center;
   }
-  .player .left{
+  #player .left{
     width: 70%;
     height: 60px;
     float: left;
   }
+  #fap-cover-wrapper{
+    /*height: 100%;*/
+    float: left;
+  }
+  #fap-cover-replacement{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+  }
+  #fap-cover-replacement>span{
+    line-height: 50px;
+    color: #bc861e;
+  }
 
-  .player .right{
+
+
+
+
+
+  #player .right{
     width: 30%;
     height: 70px;
     float: right;
   }
 
-  .player-control{
-    width: 85%;
+  #player-control{
+    width: 85%; height: 100%;
     float: left;
     position: relative;
   }
-  .player-control a{
+  #player-control a{
     position: absolute;
   }
   .fa.fa-backward,.fa.fa-forward {
@@ -193,15 +213,17 @@
   .fa.fa-play{
     font-size: 34px;
     left:24px;
+    top: 2px;
   }
   .fa.fa-forward{
     left: 60px;
   }
 
   #volume{
-    position: absolute;
+    width: 72px; height: 9px;
+    position: relative;
     top: 20px;
-    right: -2px;
+    left: 172px;
   }
   .fap-volume-bar{
     width: 50px;
@@ -209,20 +231,42 @@
     background: #000;
     float: left;
     border: 1px solid #bc861e;
+    position: absolute;
   }
-  #fap-volume-sign{
+  .fap-volume-sign{
     width: 14px; height: 12px;
     float: right;
     margin-top: -3px;
     margin-left: 5px;
+    position: relative;
   }
 
-  .fap-loading-bar{
+  #fap-time-bar{
     height: 6px;
     font-size: 10px;
-    width: 100%;
+    position: relative;
+    bottom: -33px;
+    border: 1px solid #bc861e;
+    color: #bc861e;
+  }
+  .fap-loading-bar{
+    background: rgb(188, 134, 30);
+    /*width: 0px;*/
+    height: 6px;
     position: absolute;
-    bottom: 18px;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+  }
+  #fap-time-bar span{
+    margin-top: 8px;
+    color: #bc861e;
+  }
+  #fap-current-time{
+    float: left;
+  }
+  #fap-total-time{
+    float: right;
   }
 
 
@@ -234,4 +278,5 @@
     font-size: 16px;
     display: block;
     margin-bottom: 8px;
+    text-align: center;
   }
