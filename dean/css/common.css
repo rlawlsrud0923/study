@@ -13,7 +13,7 @@
 
   a{text-decoration: none;}
 
-  a,.btn,.play_btn,.download_btn,.plus{cursor: pointer;}
+  a,.btn,.play_btn,.download_btn,#plus{cursor: pointer;}
 
   .yel{color: #fcbe46; text-align: center;}
 
@@ -129,7 +129,8 @@
     width: 100%;
     max-width: 100%;
     height: 170px;
-    bottom: -100px;
+    /*bottom: -100px;*/
+    bottom: -171px;
 
     background: rgb(252, 190, 70);
     border-color: rgb(252, 190, 70);
@@ -271,10 +272,10 @@
 
 
 
-  .control{
+  #control{
     float: right;
   }
-  .control a{
+  #control a{
     font-size: 16px;
     display: block;
     margin-bottom: 8px;
