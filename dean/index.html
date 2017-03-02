@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="css/common.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/font.css"/>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/fix.js" charset="utf-8"></script>
@@ -39,6 +40,7 @@
           <li><a href="#upcomingshows" class="yel">upcoming shows</a></li>
           <li><a href="contact.html" class="yel">contact</a></li>
         </ul>
+
       </div>
 
     </section><!-- /gnb_wrap -->
@@ -1100,25 +1102,50 @@
 
 <!-- ======================================================================= -->
 
-    <!--
-     HTML Audio/Video Events
-     https://www.w3schools.com/tags/ref_av_dom.asp
-     모양 만들고 스크립트로 재생 정지 만들기
-    -->
-    <!-- player -->
-    <div id="player">
-      <div class="player">
-        <div class="x">x</div>
+  <!--
+   HTML Audio/Video Events
+   https://www.w3schools.com/tags/ref_av_dom.asp
+   모양 만들고 스크립트로 재생 정지 만들기
+  -->
+  <!-- player -->
+  <div id="player">
+    <div class="player">
+      <div class="plus">+</div>
 
-        <div class="left"></div>
+      <div class="left">
 
-        <div class="right">
-          <audio controls>
-          <source src="horse.mp3" type="audio/mpeg"></audio>
-        </div>
+        <!-- <div class="fap-time-bar"></div> -->
+
       </div>
+
+      <div class="right">
+
+        <div class="player-control">
+          <a class="fa fa-backward"></a>
+          <a class="fa fa-play"></a>
+          <a class="fa fa-forward"></a>
+
+          <div id="volume">
+            <div class="fap-volume-bar"></div>
+            <div id="fap-volume-sign" class="fa fa-volume-up"></div>
+          </div>
+        </div>
+
+        <div class="control">
+          <a class="fa fa-caret-square-o-up"></a>
+          <a class="fa fa-random"></a>
+          <a class="fa fa-list"></a>
+        </div>
+
+        <div class="fap-loading-bar"></div>
+        <!-- <audio controls>
+        <source src="horse.mp3" type="audio/mpeg"></audio> -->
+      </div>
+
+
     </div>
-    <!-- /player -->
+  </div>
+  <!-- /player -->
 
 </body>
 </html>

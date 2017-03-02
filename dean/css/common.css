@@ -1,17 +1,19 @@
   *{
     margin: 0; padding: 0;
-    outline: 1px #95F9EF solid;
+    outline: 1px #F72F02 solid;
   }
 
   body{color: #FFF;}
 
-  html{
+  #container{
     background-color: #000;
   }
 
   ul{list-style:none;}
 
   a{text-decoration: none;}
+
+  a,.btn,.play_btn,.download_btn,.plus{cursor: pointer;}
 
   .yel{color: #fcbe46; text-align: center;}
 
@@ -24,8 +26,6 @@
   }
 
   .btn{
-    background: #fcbe46;
-    /*height: 38px;*/
     font-size: 10px;
     width: 76px;
     padding: 13px 30px;
@@ -35,7 +35,7 @@
     background-color: #303030;
     color: #FFF;
   }
-  .download_btn{
+  .btn,.download_btn{
     background-color: #fcbe46;
   }
 
@@ -126,52 +126,112 @@
 
 
   #player{
-    bottom: -100px;
+    width: 100%;
+    max-width: 100%;
     height: 170px;
+    bottom: -100px;
+
     background: rgb(252, 190, 70);
     border-color: rgb(252, 190, 70);
 
-    width: 100%;
-    max-width: 100%;
     position: fixed;
-    left: 0;
-    z-index: 100000;
-    font-size: 10px;
+    z-index: 10000;
     font-family: Helvetica, sans-serif;
   }
+  #player *{color: #000;}
+
   .player{
     width: 960px;
     height: 100%;
     margin: 0 auto;
     padding-top: 5px;
+    line-height: 12px;
+    font-size: 14px;
   }
 
-  .x{
+  .plus{
     background: rgb(252, 190, 70);
     border-top-color: rgb(252, 190, 70);
     border-right-color: rgb(252, 190, 70);
     border-bottom: none;
     border-left-color: rgb(252, 190, 70);
-    top: -17px;
+    border: 1px solid rgb(252, 190, 70);
+
+    font-size: 10px;
 
     position: absolute;
+    top: -18px;
+    left: 472px;
+
     height: 16px;
-    padding: 0 7px;
-    left: 0;
-    border: 1px solid;
-    cursor: pointer;
-    font-size: 100%;
+    padding: 1px 7px 0;
     text-align: center;
   }
-  .left{
+  .player .left{
     width: 70%;
-    float: left;
-    /*margin-top: 5px;*/
     height: 60px;
+    float: left;
   }
-  .right{
-    float: right;
-    /*margin-top: 5px;*/
-    height: 70px;
+
+  .player .right{
     width: 30%;
+    height: 70px;
+    float: right;
+  }
+
+  .player-control{
+    width: 85%;
+    float: left;
+    position: relative;
+  }
+  .player-control a{
+    position: absolute;
+  }
+  .fa.fa-backward,.fa.fa-forward {
+    top: 14px;
+  }
+  .fa.fa-play{
+    font-size: 34px;
+    left:24px;
+  }
+  .fa.fa-forward{
+    left: 60px;
+  }
+
+  #volume{
+    position: absolute;
+    top: 20px;
+    right: -2px;
+  }
+  .fap-volume-bar{
+    width: 50px;
+    height: 6px;
+    background: #000;
+    float: left;
+    border: 1px solid #bc861e;
+  }
+  #fap-volume-sign{
+    width: 14px; height: 12px;
+    float: right;
+    margin-top: -3px;
+    margin-left: 5px;
+  }
+
+  .fap-loading-bar{
+    height: 6px;
+    font-size: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 18px;
+  }
+
+
+
+  .control{
+    float: right;
+  }
+  .control a{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
   }
