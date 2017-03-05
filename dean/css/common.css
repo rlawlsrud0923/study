@@ -129,8 +129,8 @@
     width: 100%;
     max-width: 100%;
     height: 170px;
-    /*bottom: -100px;*/
-    bottom: -171px;
+    bottom: -100px;
+    /*bottom: -171px;*/
 
     background: rgb(252, 190, 70);
     border-color: rgb(252, 190, 70);
@@ -159,8 +159,9 @@
     border: 1px solid rgb(252, 190, 70);
 
     font-size: 10px;
+    display: inline-block;
 
-    position: absolute;
+    position: relative;;
     top: -18px;
     left: 472px;
 
