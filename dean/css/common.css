@@ -13,7 +13,7 @@
 
   a{text-decoration: none;}
 
-  a,.btn,.play_btn,.download_btn,#plus{cursor: pointer;}
+  a,.btn,.play_btn,.download_btn,#plus,.fa-volume-up,input[type=range],input[type=submit],#fap-cover-replacement{cursor: pointer;}
 
   .yel{color: #fcbe46; text-align: center;}
 
@@ -152,16 +152,13 @@
 
   #plus{
     background: rgb(252, 190, 70);
-    border-top-color: rgb(252, 190, 70);
-    border-right-color: rgb(252, 190, 70);
     border-bottom: none;
-    border-left-color: rgb(252, 190, 70);
     border: 1px solid rgb(252, 190, 70);
 
     font-size: 10px;
     display: inline-block;
 
-    position: relative;;
+    position: absolute;
     top: -18px;
     left: 472px;
 
@@ -227,14 +224,32 @@
     top: 20px;
     left: 172px;
   }
-  .fap-volume-bar{
+  input[type=range] {
+      -webkit-appearance: none;
+      width: 50px;
+      height: 6px;
+      background: #000;
+      float: left;
+      border: 1px solid #bc861e;
+      position: absolute;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background-color: #bc861e;
+      width: 10px;
+      height: 6px;
+      opacity: .7;
+  }
+
+  /*.fap-volume-bar{
     width: 50px;
     height: 6px;
     background: #000;
     float: left;
     border: 1px solid #bc861e;
     position: absolute;
-  }
+  }*/
   .fap-volume-sign{
     width: 14px; height: 12px;
     float: right;

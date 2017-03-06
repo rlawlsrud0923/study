@@ -16,10 +16,22 @@
   <script src="js/news.js" charset="utf-8"></script>
   <script src="js/upcomingshows.js" charset="utf-8"></script>
   <script src="js/fadebanner.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+  <!--
+  window.onload = function() {
+      document.getElementById('submit').onclick = function() {
+          document.getElementById('frm').submit();
+          return false;
+      };
+  };
+  //-->
+  </script>
+
 </head>
 <body>
 
-<div id="container">
+<!-- <div id="container"> -->
 
   <!-- gnb_wrap -->
   <section class="gnb_wrap" class="yel">
@@ -45,19 +57,27 @@
     <!-- contact-->
     <section id="contact" >
 
-      <form action="" method="post" novalidate="novalidate">
+      <form action="mailto:kador01@naver.com" id="frm" method="post" novalidate="novalidate">
 
         <div class="namemail">
-          <input type="text" name="your-first" value="" placeholder="Your Name" />
-          <input type="text" name="your-email" value="" placeholder="Your Email" />
+          <label for="your-first"></label>
+          <input type="text" id="your-first" name="your-first" value="" placeholder="Your Name" />
+
+          <label for="your-email"></label>
+          <input type="text" id="your-email" name="your-email" value="" placeholder="Your Email" />
         </div>
 
         <div class="txt">
           <textarea name="your-message" cols="40" rows="10" placeholder="Your Message"></textarea>
         </div>
 
+        <!-- <div class="submit">
+          <input type="submit" id="submit" value="Send Message" />
+        </div> -->
+
         <div class="submit">
-          <input type="submit" value="Send Message" />
+          <input type="submit" onclick="document.getElementById('frm').submit();" value="Send Message">
+          <a href="#" onclick="document.getElementById('frm').submit();"></a>
         </div>
 
       </form>
@@ -87,7 +107,8 @@
 
 <!-- ======================================================================= -->
 
-</div><!-- /container -->
+<!-- </div> -->
+<!-- /container -->
 
 </body>
 </html>

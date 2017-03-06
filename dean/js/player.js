@@ -20,12 +20,14 @@ $( document ).ready( function() {
 
 
 
-$( "#plus").bind( "click", function( event ) {
-  $( "#player_wrap" ).animate( {bottom: '-100px'},"fast");
-});
-$( "#plus").bind( "click", function( event ) {
-  $( "#player_wrap" ).animate( {bottom: '-171px'},"fast");
-});
+  $( "#plus").off().bind( "click", function( event ) {
+    $( "#player_wrap" ).animate( {bottom: '-100px'},"fast");
+  });
+  $( "#plus").bind( "click", function( event ) {
+      // $( "#player_wrap" ).animate( {bottom: '-171px'},"fast").stop();
+      $( "#player_wrap" ).animate( {bottom: '-171px'},"fast").stop();
+  });
+
 
 
 
