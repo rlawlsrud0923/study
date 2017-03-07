@@ -47,13 +47,39 @@
     margin-left: 40%;
     margin-bottom: 20px;
   }
-  #itunes li,#purchase_album li{
+  #purchase li,#purchase_album li{
     float: left;
     outline: 1px solid #fcbe46;
   }
-  #itunes li:hover,#purchase_album li:hover{
+  #purchase li .btn:hover,#purchase_album li:hover{
+    box-shadow: inset 200px 0 0 0 #000;
+    color: #FFF;
+  }
+  #purchase li .btn{
+    color: #000;
+    background: #fcbe46;
+    font-size: 10px;
+    width: 76px;
+    padding: 13px 30px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #31302B;
+  	-webkit-transition: all ease 0.8s;
+  	-moz-transition: all ease 0.8s;
+  	transition: all ease 0.8s;
+  }
+
+  .enter{
+    width: 136px;
+    height: 38px;
+    /*position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;*/
     background: #000;
   }
+
 
   /* purchase_album btn */
   #purchase_album{
