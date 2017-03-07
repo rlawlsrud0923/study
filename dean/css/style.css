@@ -51,33 +51,24 @@
     float: left;
     outline: 1px solid #fcbe46;
   }
-  #purchase li .btn:hover,#purchase_album li:hover{
-    box-shadow: inset 200px 0 0 0 #000;
-    color: #FFF;
-  }
+
+
+  /*sliding-background-color*/
   #purchase li .btn{
-    color: #000;
     background: #fcbe46;
     font-size: 10px;
     width: 76px;
     padding: 13px 30px;
     display: inline-block;
     text-align: center;
-    cursor: pointer;
     box-shadow: inset 0 0 0 0 #31302B;
   	-webkit-transition: all ease 0.8s;
   	-moz-transition: all ease 0.8s;
   	transition: all ease 0.8s;
   }
-
-  .enter{
-    width: 136px;
-    height: 38px;
-    /*position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;*/
-    background: #000;
+  #purchase li .btn:hover,#purchase_album li:hover{
+    box-shadow: inset 200px 0 0 0 #000;
+    color: #FFF;
   }
 
 
@@ -278,7 +269,7 @@
   .twitter_txt{
     width: 495px;
     height: 36px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: block;
     margin-bottom: 10px;
     position: relative;
@@ -290,8 +281,13 @@
     font-size: 0;
   }
   .twitter_txt ul li{
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 12px;
+    position: absolute;
+    display: none;
+  }
+  .twitter_txt ul li:first-child{
+    display: block;
   }
 
 

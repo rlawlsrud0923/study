@@ -1,34 +1,21 @@
 $( document ).ready( function() {
 
-  //
-  // $("#plus").click(function(){
-  //   $("#player_wrap").animate({bottom: '-100px'},"fast", function(){
-  //     $("#plus").click(function(){
-  //       $("#player_wrap").animate({bottom: '-171px'},"fast")
-  //     });
-  //   },function(){
-  //     $("#player_wrap").animate({bottom: '-171px'},"fast")
-  //   });
-  // });
+  var toggle=true;
 
+  $( "#player_wrap" ).click(function(){
+    // console.log(toggle);
 
-// $( "#plus" ).unbind({
-//   click: function() {
-//     $( "#player_wrap" ).animate({bottom: '-100px'},"fast")
-//   },
-// });
+    if( toggle == true) //보이게
+    {
+      $( "#player_wrap" ).animate( {bottom: '-100px'},"fast");
+      toggle = false;
+    }
+    else { //안보이게
+      $( "#player_wrap" ).animate( {bottom: '-171px'},"fast");
+      toggle = true;
+    }
 
-
-
-  $( "#plus").off().bind( "click", function( event ) {
-    $( "#player_wrap" ).animate( {bottom: '-100px'},"fast");
   });
-  $( "#plus").bind( "click", function( event ) {
-      // $( "#player_wrap" ).animate( {bottom: '-171px'},"fast").stop();
-      $( "#player_wrap" ).animate( {bottom: '-171px'},"fast").stop();
-  });
-
-
 
 
 });
