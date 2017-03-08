@@ -2,7 +2,7 @@ $( document ).ready( function() {
 
   var toggle=true;
 
-  $( "#player_wrap" ).click(function(){
+  $( "#plus" ).click(function(){
     // console.log(toggle);
 
     if( toggle == true) //보이게
@@ -16,6 +16,34 @@ $( document ).ready( function() {
     }
 
   });
+
+
+
+  container = $('#player_wrap');
+	cover = $('#fap-cover-replacement');
+	play = $('#play');
+	// pause = $('#pause');
+	mute = $('#mute');
+	// muted = $('#muted');
+	// close = $('#close');
+	song = new Audio('music/music.mp4a');
+	duration = song.duration;
+
+  play.on('click',function(e){
+    e.preventDefault();
+		song.play();
+
+    $(this).replaceWith('<a class="button gradient" id="pause" href="" title=""></a>');
+		container.addClass('containerLarge');
+		cover.addClass('coverLarge');
+		$('#close').fadeIn(300);
+		$('#seek').attr('max',song.duration);
+  });
+
+
+
+
+
 
 
 });
