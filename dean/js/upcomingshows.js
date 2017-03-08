@@ -1,6 +1,7 @@
 
 // html dom 이 다 로딩된 후 실행
 $(document).ready(function(){
+  
     $(".show_title").first("dt").css('color','#fcbe46');
 
     // show_wrap 클래스 바로 하위에 있는 show_title를 클릭했을 때
@@ -20,4 +21,10 @@ $(document).ready(function(){
             $(this).css('color', '#fcbe46');
         }
     });
+
+
+    // $( ".show_title" ).click(function() {
+    //    $(this).css('color', '#fcbe46');
+    //   $( ".show_desc" ).slideToggle( "fast" );
+    // });
 });

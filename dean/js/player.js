@@ -22,7 +22,7 @@ $( document ).ready( function() {
   container = $('#player_wrap');
 	cover = $('#fap-cover-replacement');
 	play = $('#play');
-	// pause = $('#pause');
+	pause = $('#pause');
 	mute = $('#mute');
 	// muted = $('#muted');
 	// close = $('#close');
