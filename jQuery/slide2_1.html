@@ -28,9 +28,10 @@
 
              var idx = 0; //초기값
 
-             var inters = setInterval(function(){
+              // auto slide
+              var inters = setInterval(function(){
                  $('.next').trigger('click')
-             },3000);
+              },3000);
 
 
             //이미지에 마우스대면 슬라이드 재생/멈춤
@@ -41,10 +42,10 @@
              }).mouseleave(function(){  //마우스를 떼면 작동해
 
                 inters = setInterval(function(){    //반복재생해라.
-                 $('.next').click();    // next를 click하면 
+                 $('.next').click();    // next를 click하면
                  },3000);   //3초동안
              })
-             
+
 
              function movement(start,end,i){
                 $('.view li').eq(i).addClass('on').find('div').css({
@@ -52,7 +53,8 @@
                     'display':'block'
                 }).stop().animate({
                     left:end
-                }).parent().siblings().removeClass();   // 선택된 요소(부모,형제요소)의 클래스 이름을 제거해.
+                }).parent().siblings().removeClass();
+                  // 선택된 요소(부모,형제요소)의 클래스 이름을 제거해.
 
 
                 if(idx == $('.view li').length){

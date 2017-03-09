@@ -26,40 +26,38 @@ $(document).ready(function(){
 	// }
 	//
 
-	var move = $('.twitter_txt').width()// 이동값
-	var idx = 0; // 초기값
+	var idx = 0; //초기값
 
-	$('.twitter_txt').load(function(){
-
-		 $('.twitter_txt ul')
-		 .eq(idx)//li 중에 idx 번째 해당하는 놈
-		 .find('li')//의 자식한테
-		 .animate({//움직임줘
-				 left:-move//왼쪽으로 슬라이드 위드값 만큼 이동해
-		 },10000)
-		 .parent()//부모로 올라와
-		 .next()//그다음놈
-		 .find('li')//의 자식
-		 .css({//한테  스타일줘
-				 'display':'block', //눈에 보이게 하고
-				 'left':move // 오른쪽 끝으로 이동해
-		 })
-		 .stop()
-		 .animate({// 움직임줘
-				 'left':0 // 눈에 보이는 0위치로 이동해
-		 })
-
-		 idx ++ // 그리고 idx 증가해 (다음 )
-
-		 if(idx == $('.twitter_txt ul').length){
-					idx = 0;
-				 $('.twitter_txt ul').eq(idx).find('li').css({
-						 'left':move
-				 }).stop().animate({
-						 'left':0
-				 })
-		 }
+ 	// auto slide
+ // 	var inters = setInterval(function(){
+ // 		 $('.twitter_txt').trigger('click')
+ // 	},3000);
 
 
-	});
+
+
+	 function movement(start,end,i){
+			$('.view li').eq(i).addClass('on').find('div').css({
+					left:start,
+					'display':'block'
+			}).stop().animate({
+					left:end
+			}).parent().siblings().removeClass();
+				// 선택된 요소(부모,형제요소)의 클래스 이름을 제거해.
+
+
+			if(idx == $('.view li').length){
+					idx = 0
+					movement('100%',0,idx)
+			}else if(idx < 0){
+					idx = $('.view li').length -1;
+					movement('-100%',0,idx)
+			}
+	 }
+
+
+
+
+
+
 });

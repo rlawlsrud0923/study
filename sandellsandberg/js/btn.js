@@ -1,12 +1,17 @@
 $(document).ready(function(){
   $(".fadebanner button").css({"background-color":"rgba(0,0,0,0.7)","color":"#FFF"})
 
+
+  $(".fadebanner").mouseenter(function(){
+    $(".fadebanner ul li a").css({"color":"rgba(0,0,0,0.7)","background-color":"#FFF"});
+  })
+
   //fadebanner btn mouseover
   $(".fadebanner ul li a,.fadebanner button")
-  .mouseover(function() {
+  .mouseenter(function() {
     $(this).css({"color":"rgba(0,0,0,0.7)","background-color":"rgba(252,237,35,0.9)"});
   })
-  .mouseout(function() {
+  .mouseleave(function() {
     $(".fadebanner ul li a").css("background-color","#FFF");
     $(".fadebanner button").css({"color":"#FFF","background-color":"rgba(0,0,0,0.7)"});
   });

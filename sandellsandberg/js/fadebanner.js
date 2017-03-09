@@ -29,10 +29,6 @@ $(document).ready(function(){
     }
   };
 
-  $(".prev").click(function(){
-    
-  })
-
 
 
 });
