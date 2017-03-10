@@ -22,28 +22,30 @@
   <script src="js/fadebanner.js" charset="utf-8"></script>
   <script src="js/player.js" charset="utf-8"></script>
 
-<style media="screen">
-  .js--lazyload img{width: 1901px; height: 950px;}
-</style>
+ <script src="jquery.dimensions.js" type="text/javascript"></script>
+
+
+<link rel="stylesheet" href="./responsive-lazyload.min.css">
 </head>
-<script src="path/to/bower_components/responsive-lazyload/dist/responsive-lazyload.min.js"></script>
-<script>
-  responsiveLazyload.lazyLoadImages();
-</script>
+
 <body>
-<!-- https://ivopetkov.com/b/lazy-load-responsive-images/ -->
+
+<!-- https://github.com/jlengstorf/responsive-lazyload.js -->
+
   <div id="container">
 
-    <div class="js--lazyload" style="height:950px;">
-      <img alt="image description"
-           src="img/album_1901x950.jpg"
-           srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-           data-lazyload="img/album_1901x950.jpg 300w,
-                          img/album_1901x950.jpg 600w,
-                          img/album_1901x950.jpg 690w,
-                          img/album_1901x950.jpg 1380w"
-                          >
-    </div>
+
+
+    <div class="js--lazyload"
+       style="padding-bottom: 66.67%">
+    <img alt="image description"
+         src="img/album_1901x950.jpg"
+         srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+         data-lazyload="img/album_1901x950.jpg 300w,
+                        img/album_1901x950.jpg 600w,
+                        img/album_1901x950.jpg 690w,
+                        img/album_1901x950.jpg 1380w">
+  </div>
 
     <header></header>
 
