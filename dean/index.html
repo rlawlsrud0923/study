@@ -13,41 +13,88 @@
   <link rel="stylesheet" href="css/common.css"/>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/font.css"/>
+<link rel="stylesheet" href="css/responsive-lazyload.min.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://code.lengstorf.com/responsive-lazyload.js/css/example-only.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/fix.js" charset="utf-8"></script>
   <script src="js/upcomingshows.js" charset="utf-8"></script>
   <script src="js/fadebanner.js" charset="utf-8"></script>
   <script src="js/player.js" charset="utf-8"></script>
 
- <script src="jquery.dimensions.js" type="text/javascript"></script>
+<style>
 
+  /*
+   * Add a loading animation to lazyloaded images.
+   */
+  .js--lazyload--loading::before,.js--lazyload--loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #BBBBBB;
+    border: 2px solid #BBBBBB;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+  }
 
-<link rel="stylesheet" href="./responsive-lazyload.min.css">
+  .js--lazyload::before {
+    animation: loading 2s linear 0s infinite;
+  }
+
+  .js--lazyload::after {
+    animation: loading 2s linear -1s infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      background-color: rgba(175, 175, 175, 0.95);
+      transform: translate(-50%, -50%) scale(0.1);
+      opacity: 1;
+    }
+
+    60% {
+      background-color: rgba(175, 175, 175, 0.5);
+    }
+
+    100% {
+      background-color: rgba(175, 175, 175, 0);
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
+  }
+
+  /*
+   * NOTE: It’d probably be wise to hide the animation if JS is disabled.
+   * To do this, add a `no-js` class to the body element and remove it with
+   * JS once the DOM is ready, then uncomment this rule.
+   * /
+  .no-js .js--lazyload--loading {
+    display: none;
+  }
+  /**/
+
+</style>
 </head>
 
 <body>
 
-<!-- https://github.com/jlengstorf/responsive-lazyload.js -->
 
   <div id="container">
 
-
-
-    <div class="js--lazyload"
-       style="padding-bottom: 66.67%">
-    <img alt="image description"
-         src="img/album_1901x950.jpg"
-         srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-         data-lazyload="img/album_1901x950.jpg 300w,
-                        img/album_1901x950.jpg 600w,
-                        img/album_1901x950.jpg 690w,
-                        img/album_1901x950.jpg 1380w">
-  </div>
-
-    <header></header>
+    <div class="js--lazyload" style="padding-bottom: 66.67%">
+        <img alt="image description"
+             src="img/album_1901x950.jpg"
+             srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+             data-lazyload="img/album_1901x950.jpg 300w,
+                            img/album_1901x950.jpg 600w,
+                            img/album_1901x950.jpg 690w,
+                            img/album_1901x950.jpg 1380w">
+    </div>
 
     <!-- gnb_wrap -->
     <section class="gnb_wrap" class="yel">
@@ -1184,5 +1231,9 @@
   <!-- /player_wrap -->
 
 
+    <script src="js/responsive-lazyload.min.js"></script>
+    <script>
+      responsiveLazyload.lazyLoadImages();
+    </script>
 </body>
 </html>
