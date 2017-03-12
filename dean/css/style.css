@@ -1,17 +1,18 @@
-
+  html,body{height: 100%;}
   /* header */
   header{
     background: url("../img/album_1901x950.jpg");
     background-size: cover;
     background-position: center top;
-    width: 100%;
-    height: 950px;
+    /*width: 100%;*/
+    /*height: 950px;*/
     /*height: 638px;*/
+    height: 100%;
     text-align: center;
   }
   /*header img{
     width: 100%;
-    height: 638px;
+    height: 100%;
   }*/
 
 /******************************************************************************/
