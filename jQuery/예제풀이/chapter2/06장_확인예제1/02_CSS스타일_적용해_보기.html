@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>01_CSS스타일_적용해_보기</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<style>
+			html * { margin:0; padding:0; }
+			body span { color:red; font-size: 30px; }
+			li { margin:5px; list-style: none; border: 1px solid green; }
+			#wrapper {	margin:20px;	}
+
+			#el { margin-top:0px; background-color: #efefef; padding:15px; color:blue;	font-size:24px; }
+
+			#controller { margin:0; }
+			#input { height:30px; }
+
+			#input select { float: left; margin-right:5px; }
+
+			#input input { float:left; margin-right:5px; }
+		</style>
+		<script>
+
+			$(document).ready(function(){
+
+          var prop_val;
+          //선택박스이벤트 (선택박스)정의
+          var selectEvent = function(){
+            prop_val = $(this).val();
+            var css_val = $('#el').css(prop_val);
+
+            $('.css_prop_value').val(css_val);   // $('.css_prop_value').attr('value',css_val); 로 사용할 수도 있음.
+            //console.log(prop_val);
+          }
+
+          //클릭이벤트 (적용버튼) 정의
+          var confirm = function(){
+            var css_val = $('.css_prop_value').val(); //.val(); => '.css_prop_value'의 값 가져오는 것. 위의 val와는 다른 값을 가짐.
+            $('#el').css(prop_val,css_val);
+          }
+
+          //이벤트실행
+            $('select.css_prop').change(selectEvent);
+            $('.button').click(confirm);
+          });
+
+
+//.change() : click이벤트 사용시 이중클릭 될 때 사용함. select박스에만 쓰는 이벤트다.
+//css : 뒤에 값을 쓰지 않으면 내가 요청한 css속성의 값을 알아옴.
+//attr : 속성을 알아옴.
+//.val() : 값 가져오는 것.
+
+
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="controller">
+				<div id="input">
+					<select class="css_prop">
+						<option value="">CSS속성을 선택해 주세요.</option>
+						<option value="fontSize">font-size</option>
+						<option value="color">color</option>
+						<option value="backgroundColor">background-color</option>
+						<option value="margin">margin</option>
+						<option value="padding">padding</option>
+					</select>
+					<input class="css_prop_value" type="text" value="" />
+
+          <input class="button" type="button" value="적용"/>
+
+				</div>
+			</div>
+			<div id="el">
+				이곳에 CSS 스타일을 적용시켜 주세요.
+			</div>
+		</div>
+	</body>
+</html>

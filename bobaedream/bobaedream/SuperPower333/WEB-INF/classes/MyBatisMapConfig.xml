@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+ 
+ 	<!-- typeAlias 를 여기에 몰아서, ibatis 일때는 쿼리 파일마다 
+ 	     따로 기술,  MyBatis 는 여기 몰아서 -->
+    <typeAliases>
+    	<typeAlias alias="BoardDto" 
+    	   type="com.superpower.board.dto.BoardDto"/>
+	</typeAliases>
+
+	<mappers>
+	  <mapper resource="/com/superpower/data/board.xml"/>
+	</mappers>
+</configuration>

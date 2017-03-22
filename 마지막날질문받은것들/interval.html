@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+    /*
+     setInterval(실행 될 함수, 반복) 반복실행됨
+     
+     
+     
+     
+     
+     
+     setTimeout(실행 될 함수, 시간) 한번만 실행됨
+     
+    var i = 0
+    var aa = function(){
+         console.log(i++) 
+     }
+     if(i == 10){
+             clearTimeout(a)
+         }else{
+            a = setTimeout(aa,1000)    
+         }
+     }
+     aa()
+     
+     
+     //setTinmeout을 interval처럼 사용하는 방법
+       var i = 0
+   
+        var aa = function(){
+             console.log(i++) 
+             
+             setTimeout(aa,1000)
+         }
+         
+         
+         aa()
+         
+     
+     */
+
+    var i = 0
+    //방법1
+    function aa(){
+        console.log(i++)  
+        
+        if(i == 10){
+            clearInterval(inter) //정지 시켜줌
+        }
+    }
+    
+    //방법2 익명함수 사용한 방법
+    // var aa = function(){
+    //      console.log(i++) 
+    //  }
+    
+    var inter = setInterval(aa,1000)
+    
+    
+    
+    
+    
+    
+     
+    </script>
+    
+</head>
+<body>
+   
+   
+    
+</body>
+</html>

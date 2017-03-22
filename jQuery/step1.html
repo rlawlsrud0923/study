@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script>
+  // document.write
+  // document.get
+
+$(document).ready(function(){
+  console.log($('.hi').text())
+})
+
+  </script>
+
+  <title>jquary</title>
+</head>
+<body>
+  <div class="hi">hihihihihihiihi</div>
+
+  <!--
+  javascript는 위에서 아래로 읽음  ->  <script>보다 아래에 위치한 것은 적용이 안됨.
+  ∴ <script>의 성능 상 가장 좋은 위치는 body의 맨아래.
+  <script>를 상위에 쓰는 경우엔 document.ready를 써줘야 됨.
+
+  jQuary 작성법 : $(선택자)  ->  jQuary(선택자)로 써도 됨.
+  var $ = jQuary와 같은 의미임.
+  jQuary는 그냥 구동 안되고 jQuary파일을 다운받고 폴더에 있는걸 링크 걸어서 사용함.
+  요즘엔 설치안하고 google CDN에 있는 것 복붙해서 씀.
+  -->
+
+</body>
+</html>

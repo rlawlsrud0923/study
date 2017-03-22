@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>09_each_메소드.html</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<style>
+			html * { margin:0; padding:0; }
+			body span { color: red; font-size: 30px; }
+			#wrapper > ul > li { margin:5px; list-style: none; border: 1px solid green; }
+			#wrapper > ul > li > ul > li  { margin:5px; list-style: none; border: 1px solid blue; }
+		</style>
+		<script>
+
+    $(document).ready(function(){
+
+      $('#wrapper li').each(function(i){
+        console.log($(this).text());
+      });
+
+      for(i=0; i < ('#wrapper li').size();i++){
+        $('#wrapper li:eq('+i+')').text()
+      }
+
+    });
+
+		</script>
+	</head>
+
+	<body>
+		<span>each() 메소드를 사용하여 ul엘리먼트 자식엘리먼트를 순환하여 모두 색을 바꿔 주세요.</span>
+
+<div id="wrap">
+  <ul>
+    <li>hello_element001</li>
+    <li>hello_element002</li>
+    <li>hello_element003</li>
+    <li>hello_element004</li>
+    <li>hello_element005</li>
+  </ul>
+</div>
+
+	</body>
+</html>

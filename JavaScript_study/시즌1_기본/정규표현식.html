@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+
+  @정규표현식(regular expression)
+  문자열에서 특정한 문자를 찾아내는 도구다.
+  크게 컴파일과 실행으로 나뉜다.
+
+  @패턴만들기
+
+  1.정규표현식 리터럴
+  var str = "a";
+  var pattern = /a/; // > /a/
+
+  2.정규표현식 객체 생성자
+  var pattern = new RegExp('a'); // > /a/
+
+  @정규표현식 메소드 실행
+
+  1.RegExp.exec() : (=execution=실행,수행) 필요한 정보를 추출함
+
+  var pattern = /a/;
+  console.log(pattern.exec('abcdef')); // > ["a"]
+  // 찾고자하는 대상이 없을 경우 > null
+
+  var pattern = /a./; // .은 하나의 문자를 의미함
+  console.log(pattern.exec('abcdef')); // > ["ab"]
+
+  2.RegExp.test() : 존재유무를 test함
+  console.log(pattern.test('abcdef')); // true
+  cnosole.log(pattern.test('bcdefg')); // false
+
+  @문자열 메소드 실행
+  1.String.match() : RegExp.exec()와 비슷하다.
+  var str = 'abcdef';
+  str.match(pattern); // ["a"]
+
+  var str = 'bcdef'
+  str.match(pattern); // null
+
+  2.String.replace()
+  문자열에서 패턴을 검색해서 변경하고, 변경된 값을 리턴한다.
+
+  var str = 'abcdef'
+  str.replace(pattern, 'A'); //  Abcdef
+
+  @옵션
+  정규표현식 패턴을 만들 때 옵션을 설정할 수 있다.
+  옵션에 따라서 검출되는 데이터가 달라진다.
+
+  1. i : 대소문자 구분을 하지 않는다.
+  var xi = /a/; // xi = i메서드를 사용하지 않는다.
+  "Abcde".match(xi); //  null
+  "Abcde".match(oi); //  ["A"]
+
+  2. g : glober의 약자.
+  <div class=""></div>g를 붙이면 검색된 모든 결과를 리턴한다.
+
+  var xg = /a/;
+  "abcdea".match(xg); //  ["a"]
+
+  var og = /a/g;
+  "abcdea".match(og);  //  ["a" , "a"]
+
+  var ig = /a/ig;
+  "AabcAa".batch(ig);  //  ["A","a","A","a"]
+
+  @캡처
+  그룹을 지정하고 지정된 그룹을 가져와서 사용하는 것.
+
+  var pattern = /(\w+)\s(\w+)/;
+  var str = "coding everybody";
+  var result = str.replace(pattern, "$2, $1");
+  console.log(result); // everybody, coding
+
+  @치환
+  var urlPattern = /\b(?:https?):\/\/[a-z0-9-+&@#\/%?=~_|!:,.;]*/gim;
+  var content = '생활코딩 : http://opentutorials.org/course/1 입니다. 네이버 : http://naver.com 입니다. ';
+  var result = content.replace(urlPattern, function(url){
+      return '<a href="'+url+'">'+url+'</a>';
+  });
+
+  console.log(result);
+  //생활코딩 : <a href="http://opentutorials.org/course/1">http://opentutorials.org/course/1</a> 입니다. 네이버 : <a href="http://naver.com">http://naver.com</a> 입니다.
+  -->
+
+  <script type="text/javascript">
+
+  </script>
+</body>
+</html>

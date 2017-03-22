@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+function goCalc()
+{
+	var kor = document.getElementById("kor").value;
+	var eng = document.getElementById("eng")..value;
+	var mat = document.getElementById("mat")..value;
+
+	var total = eval(kor) + eval(eng) + eval(mat);
+	var avg = total/3;
+
+	document.getElementById("total").value = total;
+	document.getElementById("avg").value = avg;
+
+}
+  </script>
+ </head>
+ <body>
+   <form name="calForm">
+        이름 : <input type="text" name="name"><br/>
+		국어 : <input type="text" id="kor" value="0"><br/>
+		영어 : <input type="text" id="eng"><br/>
+		수학 : <input type="text" id="mat"><br/>
+		총점 : <input type="text" id="total"><br/>
+        평균 : <input type="text" id="avg"><br/>
+
+        <input type="button" value="계산하기" onclick="goCalc()">
+  </form>
+
+ </body>
+</html>

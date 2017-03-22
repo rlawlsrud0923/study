@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>object 이용한 카드게임</title>
+<script>
+
+//카드 정리하는 구문
+var card = {
+  card_deck:[],
+  shape:['♠','♣','♥','◆'],
+  theorem:function(){
+
+    for(var i=0 in card.shape){ //length를 굳이 뽑지 않아도 됨. card를 this라고 해도 됨.
+      console.log(i);
+      for(var j=0; j < this.card_number; j++){ //this : 앞에 있는 변수를 의미함.
+      }
+    }
+  }
+}
+
+
+
+</script>
+</head>
+<body>
+<button type="button" onclick="card.theorem()">카드정리</button>
+</body>
+</html>
