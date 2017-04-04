@@ -5,9 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+  body { margin:0; padding:0; }
+
+  #slidebox {
+    margin: 0 auto;
+  	position:relative;
+  	width:300px;
+  	height:200px;
+  	/*overflow:hidden;*/
+  	white-space:nowrap;
+  	border:1px solid #000;
+  }
+  #slidebox ul#slider {
+  	list-style:none;
+  	margin:0;
+  	padding:0;
+  }
+
+  #slidebox ul li {
+  	position:absolute;
+  	width:300px;
+  	height:300px;
+  }
+  #slidebox ul li img {
+  	width:300px;
+  	height:200px;
+  }
+  </style>
 </head>
 <body>
-  <h1>div sliding example with javascript</h1>
   <div id="slidebox">
       <ul id="slider">
           <li>
@@ -27,5 +54,57 @@
           </li>
       </ul>
   </div>
+  <script>
+  var x = 300; //가로 길이
+  var slider = document.getElementById("slider");
+  var slideArray = slider.getElementsByTagName("li"); //li객체를 배열로 저장
+  var slideMax = slideArray.length - 1; //마지막 슬라이드 번호 구하기
+  var curSlideNo = 0; //현재 슬라이드 번호 지정
+
+  for (i = 0; i <= slideMax; i++) {
+    if (i == curSlideNo) slideArray[i].style.left = 0; //현재 슬라이드의 가로좌표를 0으로 초기화
+    else slideArray[i].style.left = -x + "px"; //나머지는 모두 -300으로 초기화
+  }
+
+  slider.addEventListener('click', function(){
+    changeSlide();
+  }, false);
+
+
+
+  var aniStart = false; //애니메이션이 시작됐는지 확인해주는 변수 초기화 / 처음엔 false
+  var next = 1; //초기값으로 현재슬라이드(=curSlideNo)가 0이므로 1로 초기화 함
+
+  var changeSlide = function(){
+    if (aniStart === true) return; //aniStart가 true면 중지
+    next = curSlideNo + 1; //다음 슬라이드=처음슬라이드+1
+    if (next > slideMax) next = 0; //다음슬라이드가 맥스보다 크면 인덱스0으로
+    aniStart = true;
+    sliding(); //애니메이션 함수 호출
+  }
+
+
+
+  function sliding() {
+    var curX = parseInt(slideArray[curSlideNo].style.left, 10);
+    var nextX = parseInt(slideArray[next].style.left, 10);
+    var newCurX = curX + 10;
+    var newNextX = nextX + 10;
+    if (newCurX >= x) {
+      slideArray[curSlideNo].style.left = -x + "px";
+      slideArray[next].style.left = 0;
+      curSlideNo = curSlideNo + 1;
+      if (curSlideNo > slideMax) curSlideNo = 0;
+      aniStart = false;
+      return;
+    }
+    slideArray[curSlideNo].style.left = newCurX + "px";
+    slideArray[next].style.left = newNextX + "px";
+    setTimeout(function () {
+      sliding();
+    }, 20);
+  }
+  setInterval(changeSlide,2000); // 2초마다 chageSlide 함수를 호출
+  </script>
 </body>
 </html>
