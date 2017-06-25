@@ -3,10 +3,10 @@ $(document).ready(function(){
   //intro
   $(window).load(function(){
     $('.intro').animate({
-     opacity:0
+     opacity: 0
    }, {
       duration: 3000,
-      complete: function () {
+      complete: function(){
       $('.intro').css("display", "none");
       }
     });

@@ -49,10 +49,10 @@
     min-width: 1160px;
     position: absolute; top: 0px; left: 0px;
     z-index: 7777;
-    background: url("img/navy_bg.png");
+    background-image: url("../images/navy_bg.png");
     background-repeat: repeat;
     background-size: 220px 220px;
-    opacity: 1.0;
+    opacity: 1;
   }
   .intro .logo{
     width: 228px; height: 231px;
@@ -82,7 +82,7 @@
 /* header *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
   .header{
     height: 850px;
-    background: url("img/main_img.png") no-repeat;
+    background: url("../images/main_img.png") no-repeat;
     background-size: cover;
     margin-bottom: 48px;
   }
@@ -203,7 +203,7 @@
   #about{
     width: 100%; height: 560px;
     margin-bottom: 120px;
-    background: url("img/navy_bg.png") repeat;
+    background: url("../images/navy_bg.png") repeat;
     /*background-size: 220px 220px;*/
   }
   #about .line{
@@ -302,7 +302,7 @@
 
 /*tel *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
   #tel{
-    background: url("img/navy_bg.png");
+    background: url("../images/navy_bg.png");
     height: 462px;
     text-align: center;
   }
@@ -315,7 +315,7 @@
 
 /*footer *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  */
   #footer{
-    background: url("img/footer_bg.png");
+    background: url("../images/footer_bg.png");
     height: 330px;
     color: #000;
   }
